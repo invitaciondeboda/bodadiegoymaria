@@ -20,7 +20,7 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-weight: normal;
   letter-spacing: 1 px;
-  max-width: 80 %; /* Limita el ancho del texto */
+  max-width: 100 %; /* Limita el ancho del texto */
   margin-left: auto;
   margin-right: auto;
   }
