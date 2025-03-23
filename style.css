@@ -134,13 +134,13 @@ body {
     max-width: 100 %; /* Hacer el texto más ancho */
   }
 
-  .ribete-superior img {
-        max-width: 80 %;  /* Hace la imagen más pequeña en pantallas pequeñas */
+  .ribete {
+        max-width: 20 %;  /* Hace la imagen más pequeña en pantallas pequeñas */
     }
 }
 
   .imagen {
-    max-width: 80 %; /* Hacer la imagen más pequeña en móviles */
+    max-width: 20 %; /* Hacer la imagen más pequeña en móviles */
   }
 
   .titulo-ceremonia {
