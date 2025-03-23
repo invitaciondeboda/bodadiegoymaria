@@ -79,5 +79,18 @@ body {
     font-family: 'Cormorant Garamond', serif;
     padding-left: 20 px; /* Menos espacio en móviles */
     padding-right: 20 px;
+}
+  
+ /* Ajustar la imagen para móviles */
+  .imagen {
+    max-width: 90%; /* En móviles, la imagen puede ocupar un poco más, pero no todo */
+    height: auto; /* Mantener la proporción de la imagen */
+  }
+
+  /* Ajustar el botón para móviles */
+  .boton-mapa {
+    padding: 15px 35px; /* Hacer el botón más grande en móviles */
+    font-size: 1.4em; /* Aumentar el tamaño de la fuente */
+    max-width: 80%; /* El botón puede ser más grande en pantallas pequeñas */
   }
 }
