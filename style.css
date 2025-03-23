@@ -33,37 +33,31 @@ body {
 /* Estilo para la imagen */
 .imagen-container {
   text-align: center;
-  padding: 20px 0; /* Añade espacio alrededor de la imagen */
+  padding: 20 px 0; /* Añade espacio alrededor de la imagen */
 }
 
 .imagen {
-  max-width: 80%; /* La imagen no ocupa el 100% del ancho de la pantalla */
+  max-width: 80 %; /* La imagen no ocupa el 100% del ancho de la pantalla */
   height: auto; /* Mantiene la proporción de la imagen */
-  border-radius: 8px; /* Puedes darle bordes redondeados si lo prefieres */
+  
   margin: 0 auto; /* Centra la imagen */
 }
 
-/* Nueva sección con fondo rosa */
-.fondo-rosa {
-  background-color: #efdae0;
-  padding: 40px 0;
-  text-align: center;
-}
 
 /* Estilo para el botón */
 .boton-mapa {
   background-color: #590a1b; /* Fondo burdeos */
   color: white;
-  padding: 12px 30px;
-  font-size: 1.2em;
+  padding: 12 px 30 px;
+  font-size: 1.2 em;
   font-family: 'Cormorant Garamond', serif;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 5 px;
   text-align: center;
   margin: 0 auto; /* Asegura que el botón esté centrado */
   display: block; /* Esto asegura que el botón sea un bloque y esté centrado */
-  max-width: 250px; /* Limita el tamaño del botón */
+  max-width: 250 px; /* Limita el tamaño del botón */
 }
 
 /* El botón no cambia cuando se pasa el ratón por encima */
