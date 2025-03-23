@@ -28,6 +28,20 @@ body {
   font-style: italic; /* Antonio Machado en cursiva */
 }
 
+
+/* Imagen Ribete Superior */
+.ribete-superior {
+    text-align: center;
+    padding: 10 px 0;
+}
+
+.ribete-superior img {
+    max-width: 30 %;
+    height: auto;
+}
+
+
+
 /* Espacio rosa */
 .espacio-rosa {
    background-color: #efdae0; /* Color de fondo rosa */
