@@ -113,8 +113,8 @@ body {
 @media (max-width: 600px) {
   /* Reducir el tamaño de los elementos */
   .mensaje {
-    font-size: 1.2 em; /* Reducir el tamaño del texto */
-    max-width: 90 %; /* Hacer el texto más ancho */
+    font-size: 1.4 em; /* Reducir el tamaño del texto */
+    max-width: 100 %; /* Hacer el texto más ancho */
   }
 
   .imagen {
