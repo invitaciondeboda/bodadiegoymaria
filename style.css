@@ -14,9 +14,9 @@ body {
 .mensaje {
   color: white;
   font-size: 5 em;
-  line-height: 1.6;
-  margin-top: 50 px;
-  margin-bottom: 50 px;
+  line-height: 2;
+  margin-top: 100 px;
+  margin-bottom: 100 px;
   font-family: 'Cormorant Garamond', serif;
   font-weight: normal;
   letter-spacing: 1 px;
