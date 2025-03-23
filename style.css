@@ -30,6 +30,36 @@ body {
   font-style: italic; /* Antonio Machado en cursiva */
 }
 
+
+
+/* Texto encima de la imagen */
+.texto-encima-imagen {
+  position: absolute; /* Lo coloca sobre la imagen */
+  top: 10%; /* Un poco de margen desde la parte superior */
+  left: 50%;
+  transform: translateX(-50%); /* Centra el texto */
+  text-align: center;
+  color: #590a1b; /* Color burdeos para el texto */
+}
+
+.titulo-ceremonia {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600; /* Semibold */
+  font-size: 2.5em;
+}
+
+.detalles {
+  font-family: 'Cormorant Garamond', serif;
+  color: #303030; /* Gris oscuro */
+  font-size: 1.5em;
+  margin: 5px 0; /* Espacio entre cada línea */
+}
+
+.detalles.cursiva {
+  font-style: italic; /* En cursiva */
+}
+
+
 /* Estilo para la imagen */
 .imagen-container {
   text-align: center;
