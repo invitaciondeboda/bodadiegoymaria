@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const audio = document.getElementById("music");
 
-    // Comprobar si el estado de la música ya se guardó en el almacenamiento local
+    // Comprobar si la música ya se está reproduciendo o si ha sido pausada anteriormente
     if (localStorage.getItem("musicPlaying") === "true") {
         audio.play(); // Reproducir la música automáticamente
     } else {
@@ -19,3 +19,4 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem("musicPlaying", "false");
     });
 });
+
