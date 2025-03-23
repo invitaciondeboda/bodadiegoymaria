@@ -110,30 +110,28 @@ body {
 
 
 /* Adaptación en móviles */
-@media (max-width: 600 px) {
+@media (max-width: 600px) {
+  /* Reducir el tamaño de los elementos */
   .mensaje {
-    font-size: 1.4 em;
-    font-family: 'Cormorant Garamond', serif;
-    padding-left: 20 px; /* Menos espacio en móviles */
-    padding-right: 20 px;
-}
-  
- /* Ajustar la imagen para móviles */
-  .imagen {
-    max-width: 60 %; /* En móviles, la imagen puede ocupar un poco más, pero no todo */
-    height: auto; /* Mantener la proporción de la imagen */
+    font-size: 1.2 em; /* Reducir el tamaño del texto */
+    max-width: 90 %; /* Hacer el texto más ancho */
   }
 
-  /* Ajustar el botón para móviles */
-  .boton-mapa {
-    padding: 15 px 35 px; /* Hacer el botón más grande en móviles */
-    font-size: 1.4 em; /* Aumentar el tamaño de la fuente */
-    max-width: 40 %; /* El botón puede ser más grande en pantallas pequeñas */
+  .imagen {
+    max-width: 90 %; /* Hacer la imagen más pequeña en móviles */
   }
-  
- /* Ajustar el texto sobre la imagen para móviles */
-  .texto-ceremonia {
-    top: 30 %; /* Reducir el margen superior en móviles */
-    font-size: 1.2 em; /* Hacer el texto más pequeño en móviles */
+
+  .titulo-ceremonia {
+    font-size: 2 em; /* Reducir el tamaño del título */
+  }
+
+  .detalles {
+    font-size: 1.2 em; /* Reducir el tamaño de los detalles */
+  }
+
+  .boton-mapa {
+    font-size: 1 em; /* Reducir el tamaño del botón */
+    padding: 10 px 20 px; /* Ajustar el padding del botón */
   }
 }
+
