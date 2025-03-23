@@ -7,13 +7,13 @@ body {
 
 .franja {
   background-color: #590a1b;
-  padding: 50px 30px; /* Más espacio lateral y un poco más de alto */
+  padding: 50 px 30 px; /* Más espacio lateral y un poco más de alto */
   text-align: center;
 }
 
 .mensaje {
   color: white;
-  font-size: 0.8em;
+  font-size: 0.8 em;
   line-height: 1.6;
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
