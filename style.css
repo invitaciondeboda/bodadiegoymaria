@@ -33,11 +33,10 @@ body {
 /* Imagen Ribete Superior */
 .ribete-superior {
     text-align: center;
-    padding: 10px 0;
-}
+    }
 
 .ribete {
-    max-width: 30%;
+    max-width: 100%;
     height: auto; 
   margin: 0 auto; /* Centrar la imagen */
 }
