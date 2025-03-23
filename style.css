@@ -7,7 +7,7 @@ body {
 
 .franja {
   background-color: #590a1b;
-  padding: 100px 40px; /* Más espacio lateral y un poco más de alto */
+  padding: 40px 0px; /* Más espacio lateral y un poco más de alto */
   text-align: center;
 }
 
@@ -19,18 +19,18 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-weight: normal;
   letter-spacing: 1px;
-  max-width: 90%; /* Limita el ancho del texto */
+  max-width: 80%; /* Limita el ancho del texto */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px; /* Espacio a la izquierda */
-  padding-right: 20px; /* Espacio a la derecha */
+  padding-left: 30px; /* Espacio a la izquierda */
+  padding-right: 30px; /* Espacio a la derecha */
 }
 
 /* Adaptación en móviles */
 @media (max-width: 600px) {
   .mensaje {
     font-size: 1.2em;
-    padding-left: 10px; /* Menos espacio en móviles */
-    padding-right: 10px;
+    padding-left: 20px; /* Menos espacio en móviles */
+    padding-right: 20px;
   }
 }
