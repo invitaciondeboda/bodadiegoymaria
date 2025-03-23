@@ -1,48 +1,158 @@
+/* Estilo global */
 body {
-    font-family: 'Cormorant Garamond', serif;
-    background-color: #efdae0;
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #efdae0;
+}
+
+.franja-burdeo {
+  background-color: #590a1b;
+  padding: 50 px 50 px; /* Más espacio lateral y un poco más de alto */
+  text-align: center;
+}
+
+.mensaje {
+  color: white;
+  font-size: 2 em;
+  line-height: 1.6;
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: normal;
+  letter-spacing: 1 px;
+  max-width: 80 %; /* Limita el ancho del texto */
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.autor {
+  font-style: italic; /* Antonio Machado en cursiva */
+}
+
+
+/* Imagen Ribete Superior */
+.ribete-superior {
     text-align: center;
-    color: #333;
-    padding: 0;
-    margin: 0;
+    padding: 10 px 0;
 }
 
-.quote {
-    background-color: #590a1b;
-    color: white;
-    padding: 20px;
-    font-size: 18px;
-    line-height: 1.5;
+.ribete {
+    max-width: 30 %;
+    height: auto; 
+  margin: 0 auto; /* Centrar la imagen */
 }
 
-.quote em {
-    font-style: italic;
+
+
+/* Espacio rosa */
+.espacio-rosa {
+   background-color: #efdae0; /* Color de fondo rosa */
+  width: 100 %; /* Asegurar que ocupe todo el ancho */
+  padding: 60 px 0; /* Espacio alrededor del texto */
+  text-align: center; /* Centrar el contenido */
 }
 
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Texto encima de la imagen */
+.texto-ceremonia {
+  top: 50 %; /* Un poco de margen desde la parte superior */
+  left: 50 %;
+  text-align: center;
+  color: #590a1b; /* Color burdeos para el texto */
 }
 
-h1 {
-    color: #ff6f61;
+.titulo-ceremonia {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600; /* Semibold */
+  font-size: 4 em;
+   }
+
+.detalles {
+  font-family: 'Cormorant Garamond', serif;
+  color: #303030; /* Gris oscuro */
+  font-weight: 600; /* Semibold */
+  font-size: 2.5 em;
+  margin: 5 px 0; /* Espacio entre cada línea */
 }
 
-button {
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+.detalles.cursiva {
+  font-style: italic; /* En cursiva */
 }
 
-button:hover {
-    background-color: #ff3c2f;
+/* Espacio rosa */
+.espacio-rosa-2 {
+  background-color: #efdae0;
+  padding: 30 px 30 px; /* Espacio más amplio entre secciones */
+}
+
+/* Estilo para la imagen */
+.imagen-container {
+  text-align: center;
+  padding: 20 px 0; /* Espacio alrededor de la imagen */
+}
+
+.imagen {
+  max-width: 70 %; /* Limitar el tamaño de la imagen */
+  height: auto;
+  margin: 0 auto; /* Centrar la imagen */
+}
+
+/* Botón */
+.boton-container {
+  text-align: center;
+  margin-top: 40 px;
+}
+
+.boton-mapa {
+  background-color: #590a1b; /* Fondo burdeos */
+  color: white;
+  padding: 12 px 30 px;
+  font-size: 1.2 em;
+  font-family: 'Cormorant Garamond', serif;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5 px;
+  margin: 0 auto;
+  max-width: 300 px; /* Limitar el ancho máximo del botón */
+  width: auto;
+}
+
+/* El botón no cambia cuando se pasa el ratón por encima */
+.boton-mapa:hover {
+  background-color: #590a1b;
+}
+
+/* El botón no cambia al hacer clic */
+.boton-mapa:active {
+  background-color: #590a1b;
+}
+
+
+/* Adaptación en móviles */
+@media (max-width: 600px) {
+  /* Reducir el tamaño de los elementos */
+  .mensaje {
+    font-size: 1.4 em; /* Reducir el tamaño del texto */
+    max-width: 100 %; /* Hacer el texto más ancho */
+  }
+
+  .ribete {
+        max-width: 20 %;  /* Hace la imagen más pequeña en pantallas pequeñas */
+    }
+}
+
+  .imagen {
+    max-width: 20 %; /* Hacer la imagen más pequeña en móviles */
+  }
+
+  .titulo-ceremonia {
+    font-size: 2 em; /* Reducir el tamaño del título */
+  }
+
+  .detalles {
+    font-size: 1.2 em; /* Reducir el tamaño de los detalles */
+  }
+
+  .boton-mapa {
+    font-size: 1 em; /* Reducir el tamaño del botón */
+    padding: 10 px 20 px; /* Ajustar el padding del botón */
+  }
 }
