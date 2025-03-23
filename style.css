@@ -132,7 +132,7 @@ body {
   }
   
  /* Ajustar el texto sobre la imagen para móviles */
-  .texto-encima-imagen {
+  .texto-ceremonia {
     top: 30 %; /* Reducir el margen superior en móviles */
     font-size: 1.2 em; /* Hacer el texto más pequeño en móviles */
   }
