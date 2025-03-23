@@ -28,5 +28,38 @@ body {
 .autor {
   font-style: italic; /* Antonio Machado en cursiva */
 }
+/* Espacio rosa */
+.espacio-rosa {
+   background-color: #efdae0; /* Color de fondo rosa */
+  width: 100 %; /* Asegurar que ocupe todo el ancho */
+  padding: 60 px 0; /* Espacio alrededor del texto */
+  text-align: center; /* Centrar el contenido */
+}
+
+/* Texto encima de la imagen */
+.texto-ceremonia {
+  top: 50 %; /* Un poco de margen desde la parte superior */
+  left: 50 %;
+  text-align: center;
+  color: #590a1b; /* Color burdeos para el texto */
+}
+
+.titulo-ceremonia {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600; /* Semibold */
+  font-size: 4 em;
+   }
+
+.detalles {
+  font-family: 'Cormorant Garamond', serif;
+  color: #303030; /* Gris oscuro */
+  font-weight: 600; /* Semibold */
+  font-size: 2.5 em;
+  margin: 5 px 0; /* Espacio entre cada línea */
+}
+
+.detalles.cursiva {
+  font-style: italic; /* En cursiva */
+}
 
 }
