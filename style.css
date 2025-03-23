@@ -26,6 +26,10 @@ body {
   padding-right: 50 px; /* Espacio a la derecha */
 }
 
+.autor {
+  font-style: italic; /* Antonio Machado en cursiva */
+}
+
 /* Adaptación en móviles */
 @media (max-width: 600 px) {
   .mensaje {
