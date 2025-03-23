@@ -35,9 +35,9 @@ body {
 /* Texto encima de la imagen */
 .texto-encima-imagen {
   position: absolute; /* Lo coloca sobre la imagen */
-  top: 10%; /* Un poco de margen desde la parte superior */
-  left: 50%;
-  transform: translateX(-50%); /* Centra el texto */
+  top: 10 %; /* Un poco de margen desde la parte superior */
+  left: 50 %;
+  transform: translateX(-50 %); /* Centra el texto */
   text-align: center;
   color: #590a1b; /* Color burdeos para el texto */
 }
@@ -45,14 +45,14 @@ body {
 .titulo-ceremonia {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600; /* Semibold */
-  font-size: 2.5em;
+  font-size: 2.5 em;
 }
 
 .detalles {
   font-family: 'Cormorant Garamond', serif;
   color: #303030; /* Gris oscuro */
-  font-size: 1.5em;
-  margin: 5px 0; /* Espacio entre cada línea */
+  font-size: 1.5 em;
+  margin: 5 px 0; /* Espacio entre cada línea */
 }
 
 .detalles.cursiva {
@@ -113,20 +113,20 @@ body {
   
  /* Ajustar la imagen para móviles */
   .imagen {
-    max-width: 90%; /* En móviles, la imagen puede ocupar un poco más, pero no todo */
+    max-width: 90 %; /* En móviles, la imagen puede ocupar un poco más, pero no todo */
     height: auto; /* Mantener la proporción de la imagen */
   }
 
   /* Ajustar el botón para móviles */
   .boton-mapa {
-    padding: 15px 35px; /* Hacer el botón más grande en móviles */
-    font-size: 1.4em; /* Aumentar el tamaño de la fuente */
-    max-width: 80%; /* El botón puede ser más grande en pantallas pequeñas */
+    padding: 15 px 35 px; /* Hacer el botón más grande en móviles */
+    font-size: 1.4 em; /* Aumentar el tamaño de la fuente */
+    max-width: 80 %; /* El botón puede ser más grande en pantallas pequeñas */
   }
   
  /* Ajustar el texto sobre la imagen para móviles */
   .texto-encima-imagen {
-    top: 30%; /* Reducir el margen superior en móviles */
-    font-size: 1.2em; /* Hacer el texto más pequeño en móviles */
+    top: 30 %; /* Reducir el margen superior en móviles */
+    font-size: 1.2 em; /* Hacer el texto más pequeño en móviles */
   }
 }
