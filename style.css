@@ -13,7 +13,7 @@ body {
 
 .mensaje {
   color: white;
-  font-size: 1.4 em;
+  font-size: 2 em;
   line-height: 1.6;
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
@@ -47,13 +47,14 @@ body {
 .titulo-ceremonia {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600; /* Semibold */
-  font-size: 2.5 em;
+  font-size: 4 em;
    }
 
 .detalles {
   font-family: 'Cormorant Garamond', serif;
   color: #303030; /* Gris oscuro */
-  font-size: 1.5 em;
+  font-weight: 600; /* Semibold */
+  font-size: 2.5 em;
   margin: 5 px 0; /* Espacio entre cada línea */
 }
 
