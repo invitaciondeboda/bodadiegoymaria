@@ -38,8 +38,7 @@ body {
 
 /* Estilo para el botón */
 .boton-mapa {
-  background-color: transparent;
-  border: 2px solid #590a1b; /* Borde burdeos */
+  background-color: #590a1b; /* Fondo burdeos */
   color: white;
   padding: 12px 30px;
   font-size: 1.2em;
@@ -47,17 +46,19 @@ body {
   text-decoration: none;
   display: inline-block;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  text-align: center;
+  margin: 0 auto; /* Asegura que el botón esté centrado */
+  display: block; /* Esto asegura que el botón sea un bloque y esté centrado */
 }
 
-/* Efecto al pasar el ratón sobre el botón */
+/* El botón no cambia cuando se pasa el ratón por encima */
 .boton-mapa:hover {
-  background-color: #590a1b; /* Fondo burdeos cuando el mouse pasa */
-  color: white;
+  background-color: #590a1b; /* No cambia */
 }
 
+/* El botón no cambia al hacer clic */
 .boton-mapa:active {
-  background-color: #3e0713; /* Color más oscuro cuando el botón está presionado */
+  background-color: #590a1b; /* No cambia */
 }
 
 
