@@ -1,88 +1,22 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('https://via.placeholder.com/1920x1080.png'); /* Imagen de fondo */
-    background-size: cover;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
 }
 
-.container {
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro para leer mejor el texto */
-    padding: 30px;
-    margin-top: 50px;
-    border-radius: 15px;
-    width: 80%;
-    max-width: 800px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+/* greek */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
-header h1 {
-    font-size: 3em;
-    margin: 0;
-    color: #ff9f00; /* Color dorado para un toque elegante */
-}
+/* Additional font-face rules can go here */
 
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #fff;
-}
-
-.details p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin: 10px 0;
-}
-
-.rsvp {
-    margin-top: 30px;
-}
-
-.rsvp h2 {
-    font-size: 2em;
-    color: #ff9f00;
-}
-
-form {
-    text-align: left;
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
-    font-size: 1.1em;
-    color: #fff;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #ff9f00;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #e68900;
-}
-
-#confirmation-message {
-    margin-top: 20px;
-    font-size: 1.2em;
-    color: #b3e1b3;
-}
+/* You can continue pasting all other CSS rules you have above */
