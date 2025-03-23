@@ -1,22 +1,42 @@
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
-    unicode-range: U+1F00-1FFF;
+/* Estilo para la foto con el texto encima */
+#foto {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://github.com/invitaciondeboda/noscasamos.invitacion/raw/ab04810abba129e4e11504d83e1b72e20eff883b/Foto-01.jpg') no-repeat center center/cover;
+    text-align: center;
 }
 
-/* greek */
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
-    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+.texto-imagen {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
 }
 
-/* Additional font-face rules can go here */
+.texto-imagen h1 {
+    font-size: 4em;
+}
 
-/* You can continue pasting all other CSS rules you have above */
+.texto-imagen h2 {
+    font-size: 2em;
+}
+
+.texto-imagen p {
+    font-size: 1.5em;
+}
+
+/* Estilo para la banda burdeos */
+#banda {
+    background-color: #800000; /* Burdeos */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.texto-banda {
+    font-size: 1.5em;
+    font-family: 'Cormorant Garamond', serif;
+}
