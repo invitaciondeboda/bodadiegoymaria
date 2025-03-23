@@ -86,11 +86,10 @@ body {
 /* Estilo para la imagen */
 .imagen-container {
   text-align: center;
-  padding: 20px 0; /* Espacio alrededor de la imagen */
 }
 
 .imagen {
-  max-width: 70%; /* Limitar el tamaño de la imagen */
+  max-width: 100%; /* Limitar el tamaño de la imagen */
   height: auto;
   margin: 0 auto; /* Centrar la imagen */
 }
