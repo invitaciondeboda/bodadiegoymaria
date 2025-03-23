@@ -41,6 +41,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+}
 
 button:hover {
     background-color: #ff3c2f;
