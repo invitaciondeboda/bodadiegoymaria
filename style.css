@@ -13,7 +13,7 @@ body {
 
 .mensaje {
   color: white;
-  font-size: 0.8 em;
+  font-size: 1.2 em;
   line-height: 1.6;
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
@@ -33,11 +33,11 @@ body {
 /* Estilo para la imagen */
 .imagen-container {
   text-align: center;
-  padding: 20 px 0; /* Añade espacio alrededor de la imagen */
+  padding: 50 px 0; /* Añade espacio alrededor de la imagen */
 }
 
 .imagen {
-  max-width: 80 %; /* La imagen no ocupa el 100% del ancho de la pantalla */
+  max-width: 50 %; /* La imagen no ocupa el 100% del ancho de la pantalla */
   height: auto; /* Mantiene la proporción de la imagen */
   
   margin: 0 auto; /* Centra la imagen */
@@ -57,7 +57,7 @@ body {
   text-align: center;
   margin: 0 auto; /* Asegura que el botón esté centrado */
   display: block; /* Esto asegura que el botón sea un bloque y esté centrado */
-  max-width: 250 px; /* Limita el tamaño del botón */
+  max-width: 100 px; /* Limita el tamaño del botón */
 }
 
 /* El botón no cambia cuando se pasa el ratón por encima */
