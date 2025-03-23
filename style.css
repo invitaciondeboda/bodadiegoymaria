@@ -31,7 +31,7 @@ body {
 /* Espacio rosa */
 .espacio-rosa {
   background-color: #efdae0;
-  padding: 60 px 0; /* Espacio más amplio entre secciones */
+  padding: 50 px 50 px; /* Espacio más amplio entre secciones */
 }
 
 /* Texto encima de la imagen */
@@ -63,7 +63,7 @@ body {
 /* Espacio rosa */
 .espacio-rosa-2 {
   background-color: #efdae0;
-  padding: 30 px 0; /* Espacio más amplio entre secciones */
+  padding: 30 px 30 px; /* Espacio más amplio entre secciones */
 }
 
 /* Estilo para la imagen */
