@@ -1,99 +1,47 @@
-/* Estilo global */
 body {
-  margin: 0;
-  font-family: 'Cormorant Garamond', serif;
-  background-color: #efdae0;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #efdae0;
+    text-align: center;
+    color: #333;
+    padding: 0;
+    margin: 0;
 }
 
-.franja-burdeo {
-  background-color: #590a1b;  
-  width: 100 vw;  /* Que ocupe el ancho completo */
-  text-align: center;
+.quote {
+    background-color: #590a1b;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-.mensaje {
-  color: white;
-  font-size: 5 em;
-  line-height: 2;
-  margin-top: 100 px;
-  margin-bottom: 100 px;
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: normal;
-  letter-spacing: 1 px;
-  max-width: 100 %; /* Limita el ancho del texto */
-  margin-left: auto;
-  margin-right: auto;
-  }
-
-.autor {
-  font-style: italic; /* Antonio Machado en cursiva */
+.quote em {
+    font-style: italic;
 }
 
-.contenedor-imagen {
-  text-align: center;  /* Centra los elementos en línea, como imágenes */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.contenedor-imagen img {
-  display: block; /* La imagen se convierte en un bloque, eliminando el espacio debajo */
-  margin: 0 auto;  /* Esto centra la imagen */
+h1 {
+    color: #ff6f61;
 }
 
-
-
-/* Espacio rosa */
-.espacio-rosa {
-   background-color: #efdae0; /* Color de fondo rosa */
-  width: 100 %; /* Asegurar que ocupe todo el ancho */
-  padding: 60 px 0; /* Espacio alrededor del texto */
-  text-align: center; /* Centrar el contenido */
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Texto encima de la imagen */
-.texto-ceremonia {
-  top: 50 %; /* Un poco de margen desde la parte superior */
-  left: 50 %;
-  text-align: center;
-  color: #590a1b; /* Color burdeos para el texto */
+button:hover {
+    background-color: #ff3c2f;
 }
-
-.titulo-ceremonia {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 600; /* Semibold */
-  font-size: 10 em;
-   }
-
-.detalles {
-  font-family: 'Cormorant Garamond', serif;
-  color: #303030; /* Gris oscuro */
-  font-weight: 600; /* Semibold */
-  font-size: 5 em;
-  margin: 5 px 0; /* Espacio entre cada línea */
-}
-
-.detalles.cursiva {
-  font-style: italic; /* En cursiva */
-}
-
-
-
-
-@media (max-width: 600px) {
-  /* Reducir el tamaño de los elementos */
-  .mensaje {
-    font-size: 1.4 em; /* Reducir el tamaño del texto */
-    max-width: 100 %; /* Hacer el texto más ancho */
-  }
-
-   .contenedor-imagen {
-    max-width: 100 %; /* Hacer la imagen más pequeña en móviles */
-  }
-
-  .titulo-ceremonia {
-    font-size: 2 em; /* Reducir el tamaño del título */
-  }
-
-  .detalles {
-    font-size: 1.2 em; /* Reducir el tamaño de los detalles */
-  }
-
- }
