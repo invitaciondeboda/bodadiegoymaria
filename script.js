@@ -1,14 +1,21 @@
-// Este script es opcional, solo si deseas añadir algún comportamiento dinámico.
-// Aquí te dejo un ejemplo simple de desplazamiento suave del texto al cargar la página.
-
+// Esperar que la página se haya cargado completamente
 document.addEventListener("DOMContentLoaded", function() {
-    const textoImagen = document.querySelector(".texto-imagen");
-    
-    // Agrega una animación de aparición suave para el texto
-    textoImagen.style.opacity = 0;
-    textoImagen.style.transition = "opacity 2s";
-    setTimeout(function() {
-        textoImagen.style.opacity = 1;
-    }, 500);  // El texto se vuelve visible después de medio segundo
-});
+    const audio = document.getElementById("music");
 
+    // Comprobar si el estado de la música ya se guardó en el almacenamiento local
+    if (localStorage.getItem("musicPlaying") === "true") {
+        audio.play(); // Reproducir la música automáticamente
+    } else {
+        audio.pause(); // Pausar si no se encuentra el valor
+    }
+
+    // Cuando la música se reproduce, guardamos el estado para futuras visitas
+    audio.addEventListener("play", function() {
+        localStorage.setItem("musicPlaying", "true");
+    });
+
+    // Si la música se pausa, también lo guardamos
+    audio.addEventListener("pause", function() {
+        localStorage.setItem("musicPlaying", "false");
+    });
+});
