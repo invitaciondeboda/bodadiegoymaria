@@ -7,7 +7,7 @@ body {
 
 .franja-burdeo {
   background-color: #590a1b;  
-  width: 100 %;  /* Que ocupe el ancho completo */
+  width: 50 vw;  /* Que ocupe el ancho completo */
   text-align: center;
 }
 
