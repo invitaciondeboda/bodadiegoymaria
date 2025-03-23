@@ -85,7 +85,7 @@ body {
   }
 
    .contenedor-imagen {
-    max-width: 20 %; /* Hacer la imagen más pequeña en móviles */
+    max-width: 100 %; /* Hacer la imagen más pequeña en móviles */
   }
 
   .titulo-ceremonia {
@@ -96,9 +96,4 @@ body {
     font-size: 1.2 em; /* Reducir el tamaño de los detalles */
   }
 
-  .boton-mapa {
-    font-size: 1 em; /* Reducir el tamaño del botón */
-    padding: 10 px 20 px; /* Ajustar el padding del botón */
-  }
-}
-}
+ }
