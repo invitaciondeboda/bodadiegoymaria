@@ -64,10 +64,11 @@ body {
 .imagen-container {
   text-align: center;
   padding: 50 px 0; /* Añade espacio alrededor de la imagen */
+  position: relative; /* Necesario para usar position: absolute en el texto */
 }
 
 .imagen {
-  max-width: 50 %; /* La imagen no ocupa el 100% del ancho de la pantalla */
+  max-width: 20 %; /* La imagen no ocupa el 100% del ancho de la pantalla */
   height: auto; /* Mantiene la proporción de la imagen */
   
   margin: 0 auto; /* Centra la imagen */
