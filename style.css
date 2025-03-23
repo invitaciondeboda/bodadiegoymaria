@@ -13,7 +13,7 @@ body {
 
 .mensaje {
   color: white;
-  font-size: 1.2 em;
+  font-size: 1.4 em;
   line-height: 1.6;
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
@@ -22,15 +22,17 @@ body {
   max-width: 80 %; /* Limita el ancho del texto */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50 px; /* Espacio a la izquierda */
-  padding-right: 50 px; /* Espacio a la derecha */
-}
+  }
 
 .autor {
   font-style: italic; /* Antonio Machado en cursiva */
 }
 
-
+/* Espacio rosa */
+.espacio-rosa {
+  background-color: #efdae0;
+  padding: 60px 0; /* Espacio más amplio entre secciones */
+}
 
 /* Texto encima de la imagen */
 .texto-encima-imagen {
@@ -63,44 +65,45 @@ body {
 /* Estilo para la imagen */
 .imagen-container {
   text-align: center;
-  padding: 50 px 0; /* Añade espacio alrededor de la imagen */
-  position: relative; /* Necesario para usar position: absolute en el texto */
+  padding: 20px 0; /* Espacio alrededor de la imagen */
 }
 
 .imagen {
-  max-width: 20 %; /* La imagen no ocupa el 100% del ancho de la pantalla */
-  height: auto; /* Mantiene la proporción de la imagen */
-  
-  margin: 0 auto; /* Centra la imagen */
+  max-width: 60%; /* Limitar el tamaño de la imagen */
+  height: auto;
+  border-radius: 8px;
+  margin: 0 auto; /* Centrar la imagen */
 }
 
+/* Botón */
+.boton-container {
+  text-align: center;
+  margin-top: 40px;
+}
 
-/* Estilo para el botón */
 .boton-mapa {
   background-color: #590a1b; /* Fondo burdeos */
   color: white;
-  padding: 12 px 30 px;
-  font-size: 1.2 em;
+  padding: 12px 30px;
+  font-size: 1.2em;
   font-family: 'Cormorant Garamond', serif;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5 px;
-  text-align: center;
-  margin: 0 auto; /* Asegura que el botón esté centrado */
-  display: block; /* Esto asegura que el botón sea un bloque y esté centrado */
-  max-width: 100 px; /* Limita el tamaño del botón */
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 300px; /* Limitar el ancho máximo del botón */
+  width: auto;
 }
 
 /* El botón no cambia cuando se pasa el ratón por encima */
 .boton-mapa:hover {
-  background-color: #590a1b; /* No cambia */
+  background-color: #590a1b;
 }
 
 /* El botón no cambia al hacer clic */
 .boton-mapa:active {
-  background-color: #590a1b; /* No cambia */
+  background-color: #590a1b;
 }
-
 
 
 /* Adaptación en móviles */
