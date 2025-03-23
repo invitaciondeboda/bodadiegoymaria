@@ -31,7 +31,7 @@ body {
 
 .ribete-superior img {
   width: 100 %;  /* Que ocupe el ancho completo */
-  max-width: 800 px; /* Limita el tamaño máximo a 800px */
+  max-width: 500 px; /* Limita el tamaño máximo a 800px */
   height: auto; /* Mantiene la proporción */
   display: block; /* Elimina espacio adicional abajo */
 }
