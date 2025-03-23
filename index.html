@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Framer Project</title>
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <title>Invitación de Boda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script async src="https://events.framer.com/script?v=1" data-fid="7cafa23c01722295f03180fcfe45aca3c6218a193bcc2270b4901e034b57eb95" data-no-nt></script>
+    <!-- Música de fondo -->
+    <audio autoplay loop>
+        <source src="https://github.com/invitaciondeboda/noscasamos.invitacion/raw/ab04810abba129e4e11504d83e1b72e20eff883b/Nothing%20gonna%20stop%20us%20now.mp3" type="audio/mp3">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
 
-    <div id="main"></div>
+    <!-- Foto con texto encima -->
+    <section id="foto">
+        <div class="texto-imagen">
+            <h1>NOS CASAMOS</h1>
+            <h2>Diego y María</h2>
+            <p>08 de noviembre de 2025</p>
+        </div>
+    </section>
 
-    <div id="__framer-badge-container"></div>
-    <script type="module" async data-framer-bundle="main" src="script.js"></script>
+    <!-- Banda burdeos con texto -->
+    <section id="banda">
+        <p class="texto-banda">bla bla bla bla blablajagfljegrf Antonio Machado</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
