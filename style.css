@@ -30,7 +30,7 @@ body {
 }
 
 .contenedor-imagen {
-    width: 100 vw;  /* Ocupa todo el ancho de la pantalla */
+    width: 50 vw;  /* Ocupa todo el ancho de la pantalla */
     height: 100 vh; /* Ocupa todo el alto de la pantalla */
     display: flex;
     justify-content: center;
