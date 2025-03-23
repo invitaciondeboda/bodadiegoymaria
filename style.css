@@ -5,7 +5,7 @@ body {
   background-color: #efdae0;
 }
 
-.franja {
+.franja-burdeo {
   background-color: #590a1b;
   padding: 50 px 50 px; /* Más espacio lateral y un poco más de alto */
   text-align: center;
@@ -31,15 +31,14 @@ body {
 /* Espacio rosa */
 .espacio-rosa {
   background-color: #efdae0;
-  padding: 60px 0; /* Espacio más amplio entre secciones */
+  padding: 60 px 0; /* Espacio más amplio entre secciones */
 }
 
 /* Texto encima de la imagen */
-.texto-encima-imagen {
+.texto-ceremonia {
   position: absolute; /* Lo coloca sobre la imagen */
   top: 10 %; /* Un poco de margen desde la parte superior */
   left: 50 %;
-  transform: translateX(-50 %); /* Centra el texto */
   text-align: center;
   color: #590a1b; /* Color burdeos para el texto */
 }
@@ -48,7 +47,7 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600; /* Semibold */
   font-size: 2.5 em;
-}
+   }
 
 .detalles {
   font-family: 'Cormorant Garamond', serif;
@@ -61,37 +60,42 @@ body {
   font-style: italic; /* En cursiva */
 }
 
+/* Espacio rosa */
+.espacio-rosa-2 {
+  background-color: #efdae0;
+  padding: 30 px 0; /* Espacio más amplio entre secciones */
+}
 
 /* Estilo para la imagen */
 .imagen-container {
   text-align: center;
-  padding: 20px 0; /* Espacio alrededor de la imagen */
+  padding: 20 px 0; /* Espacio alrededor de la imagen */
 }
 
 .imagen {
-  max-width: 60%; /* Limitar el tamaño de la imagen */
+  max-width: 60 %; /* Limitar el tamaño de la imagen */
   height: auto;
-  border-radius: 8px;
+  border-radius: 8 px;
   margin: 0 auto; /* Centrar la imagen */
 }
 
 /* Botón */
 .boton-container {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 40 px;
 }
 
 .boton-mapa {
   background-color: #590a1b; /* Fondo burdeos */
   color: white;
-  padding: 12px 30px;
-  font-size: 1.2em;
+  padding: 12 px 30 px;
+  font-size: 1.2 em;
   font-family: 'Cormorant Garamond', serif;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 5 px;
   margin: 0 auto;
-  max-width: 300px; /* Limitar el ancho máximo del botón */
+  max-width: 300 px; /* Limitar el ancho máximo del botón */
   width: auto;
 }
 
