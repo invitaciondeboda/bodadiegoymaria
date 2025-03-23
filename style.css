@@ -30,8 +30,10 @@ body {
 
 /* Espacio rosa */
 .espacio-rosa {
-  background-color: #efdae0;
-  padding: 50 px 50 px; /* Espacio más amplio entre secciones */
+   background-color: #efdae0; /* Color de fondo rosa */
+  width: 100 %; /* Asegurar que ocupe todo el ancho */
+  height: 100 px; /* Altura fija */
+  display: block; /* Forzar su visibilidad */
 }
 
 /* Texto encima de la imagen */
