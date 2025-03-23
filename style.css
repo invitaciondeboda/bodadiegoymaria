@@ -33,7 +33,7 @@ body {
 /* Adaptación en móviles */
 @media (max-width: 600 px) {
   .mensaje {
-    font-size: 1.2 em;
+    font-size: 1.4 em;
     font-family: 'Cormorant Garamond', serif;
     padding-left: 20 px; /* Menos espacio en móviles */
     padding-right: 20 px;
