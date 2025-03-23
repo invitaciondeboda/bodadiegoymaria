@@ -7,31 +7,31 @@ body {
 
 .franja {
   background-color: #590a1b;
-  padding: 40px 0px; /* Más espacio lateral y un poco más de alto */
+  padding: 50px 30px; /* Más espacio lateral y un poco más de alto */
   text-align: center;
 }
 
 .mensaje {
   color: white;
-  font-size: 1.4em;
+  font-size: 0.8em;
   line-height: 1.6;
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
   font-weight: normal;
-  letter-spacing: 1px;
-  max-width: 50%; /* Limita el ancho del texto */
+  letter-spacing: 1 px;
+  max-width: 50 %; /* Limita el ancho del texto */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px; /* Espacio a la izquierda */
-  padding-right: 50px; /* Espacio a la derecha */
+  padding-left: 50 px; /* Espacio a la izquierda */
+  padding-right: 50 px; /* Espacio a la derecha */
 }
 
 /* Adaptación en móviles */
-@media (max-width: 600px) {
+@media (max-width: 600 px) {
   .mensaje {
-    font-size: 1.2em;
+    font-size: 1.2 em;
     font-family: 'Cormorant Garamond', serif;
-    padding-left: 40px; /* Menos espacio en móviles */
-    padding-right: 40px;
+    padding-left: 40 px; /* Menos espacio en móviles */
+    padding-right: 40 px;
   }
 }
