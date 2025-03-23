@@ -38,8 +38,7 @@ body {
 
 /* Texto encima de la imagen */
 .texto-ceremonia {
-  position: absolute; /* Lo coloca sobre la imagen */
-  top: 10 %; /* Un poco de margen desde la parte superior */
+  top: 50 %; /* Un poco de margen desde la parte superior */
   left: 50 %;
   text-align: center;
   color: #590a1b; /* Color burdeos para el texto */
