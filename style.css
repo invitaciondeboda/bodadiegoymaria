@@ -31,7 +31,7 @@ body {
 
 
 .ribete-superior {
-  width: 100 %;        /* Asegura que el contenedor ocupe el ancho completo */
+ 
   max-width: 200 px;   /* Limita el tamaño máximo del contenedor */
   margin: 0 auto;     /* Centra el contenedor */
 }
