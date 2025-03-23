@@ -30,7 +30,7 @@ body {
 
 
 .ribete-superior img {
-  width: 100%;  /* Que ocupe el ancho completo */
+  width: 100 %;  /* Que ocupe el ancho completo */
   height: auto; /* Mantiene la proporción */
   display: block; /* Elimina espacio adicional abajo */
 }
