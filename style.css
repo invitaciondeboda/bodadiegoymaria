@@ -123,4 +123,10 @@ body {
     font-size: 1.4em; /* Aumentar el tamaño de la fuente */
     max-width: 80%; /* El botón puede ser más grande en pantallas pequeñas */
   }
+  
+ /* Ajustar el texto sobre la imagen para móviles */
+  .texto-encima-imagen {
+    top: 30%; /* Reducir el margen superior en móviles */
+    font-size: 1.2em; /* Hacer el texto más pequeño en móviles */
+  }
 }
