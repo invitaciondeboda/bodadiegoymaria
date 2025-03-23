@@ -30,17 +30,7 @@ body {
 }
 
 
-.ribete-superior {
-  max-width: 200 px;   /* Limita el tamaño máximo del contenedor */
-  margin: 0 auto;     /* Centra el contenedor */
-}
 
-
-.ribete-superior img {
-  width: 100 %;  /* Que ocupe el ancho completo */
-  height: auto; /* Mantiene la proporción */
-  display: block; /* Elimina espacio adicional abajo */
-}
 
 
 
