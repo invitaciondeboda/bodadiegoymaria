@@ -13,24 +13,24 @@ body {
 
 .mensaje {
   color: white;
-  font-size: 1.8em;
+  font-size: 1.4em;
   line-height: 1.6;
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
   font-weight: normal;
   letter-spacing: 1px;
-  max-width: 80%; /* Limita el ancho del texto */
+  max-width: 50%; /* Limita el ancho del texto */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30px; /* Espacio a la izquierda */
-  padding-right: 30px; /* Espacio a la derecha */
+  padding-left: 50px; /* Espacio a la izquierda */
+  padding-right: 50px; /* Espacio a la derecha */
 }
 
 /* Adaptación en móviles */
 @media (max-width: 600px) {
   .mensaje {
     font-size: 1.2em;
-    padding-left: 20px; /* Menos espacio en móviles */
-    padding-right: 20px;
+    padding-left: 40px; /* Menos espacio en móviles */
+    padding-right: 40px;
   }
 }
