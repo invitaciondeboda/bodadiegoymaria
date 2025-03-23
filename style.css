@@ -1,45 +1,30 @@
-/* Reset de márgenes y padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos para el cuerpo de la página */
+/* Estilo global */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #fff;
 }
 
-/* Estilos para la franja de la invitación */
 .franja {
-    width: 100%;
-    height: 150px;
-    background-color: #590a1b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  background-color: #590a1b;
+  padding: 40px 0;
+  text-align: center;
 }
 
-/* Estilos para el texto dentro de la franja */
 .mensaje {
-    color: white;
-    font-size: 24px;
-    font-family: 'Cormorant Garamond', serif;
-    line-height: 1.4;
-    margin: 0;
-    padding: 0 20px;
+  color: white;
+  font-size: 1.8em;
+  line-height: 1.5;
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
-/* Aseguramos que se adapte bien al móvil */
-@media screen and (max-width: 768px) {
-    .mensaje {
-        font-size: 20px; /* Reducir el tamaño de fuente para pantallas más pequeñas */
-    }
+/* Adaptación en móviles */
+@media (max-width: 600px) {
+  .mensaje {
+    font-size: 1.2em;
+  }
 }
+
