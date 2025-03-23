@@ -32,8 +32,8 @@ body {
 .espacio-rosa {
    background-color: #efdae0; /* Color de fondo rosa */
   width: 100 %; /* Asegurar que ocupe todo el ancho */
-  height: 100 px; /* Altura fija */
-  display: block; /* Forzar su visibilidad */
+  padding: 60 px 0; /* Espacio alrededor del texto */
+  text-align: center; /* Centrar el contenido */
 }
 
 /* Texto encima de la imagen */
