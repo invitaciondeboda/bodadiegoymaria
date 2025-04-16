@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Invitación de Boda</title>
-  <link rel="stylesheet" href="style.css">
-
-  
-  <!-- Cargar la fuente desde Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>María y Diego</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="hero">
+    <h1>María & Diego</h1>
+    <p>¡Nos casamos!</p>
+  </header>
 
-  <!-- Franja burdeo y texto Antonio Machado-->
-  <div class="franja-burdeo">
-    <p class="mensaje">“Cuando nos vimos por primera vez,<br> no hicimos más que recordarnos<br> porque nos habíamos querido<br> en todas las vidas”<br><br><span class="autor">Antonio Machado</span></p>
-</div>
+  <nav class="nav">
+    <a href="#historia">Nuestra historia</a>
+    <a href="#evento">Información del evento</a>
+    <a href="#galeria">Galería</a>
+  </nav>
 
+  <main>
+    <section id="historia" class="section">
+      <h2>Nuestra historia</h2>
+      <p>Desde el primer día supimos que algo especial nos unía...</p>
+      <img src="images/historia.jpg" alt="Nuestra historia" />
+    </section>
 
-   <!-- Ribete supeior-->
-<div class="ribete-superior">
-    <img src="https://raw.githubusercontent.com/invitaciondeboda/noscasamos.invitacion/2683e6085ed3d6e41711383e61012455782f9626/ribetes/ribetesuperior.jpg" alt="Ribete Decorativo">
-</div>
+    <section id="evento" class="section">
+      <h2>Información del evento</h2>
+      <ul>
+        <li><strong>Fecha:</strong> 20 de diciembre de 2025</li>
+        <li><strong>Hora:</strong> 17:00 hrs</li>
+        <li><strong>Lugar:</strong> Jardines del Sol, Ciudad XYZ</li>
+      </ul>
+      <img src="images/evento.jpg" alt="Lugar del evento" />
+    </section>
 
+    <section id="galeria" class="section">
+      <h2>Galería</h2>
+      <div class="gallery">
+        <img src="images/galeria1.jpg" alt="Foto 1" />
+        <img src="images/galeria2.jpg" alt="Foto 2" />
+        <img src="images/galeria3.jpg" alt="Foto 3" />
+      </div>
+    </section>
+  </main>
 
-  
-<!-- Franja rosa -->
-  <div class="espacio-rosa">
-  <div class="texto-ceremonia">
-    <p class="titulo-ceremonia">CEREMONIA Y RECEPCIÓN</p>
-    <p class="detalles">Palacio de los Acevedo</p>
-    <p class="detalles cursiva">Hoznayo</p>
-    <p class="detalles cursiva">12:30</p>
-  </div>
-    </div>
-
-  <!-- Franja rosa -->
-  <div class="espacio-rosa-2"></div>
-  
- <!-- Imagen palacio -->
-  <div class="imagen-container">
-  <img class="imagen" src="https://raw.githubusercontent.com/invitaciondeboda/noscasamos.invitacion/665cc8a7f68de97eb451377f5e1c58dcee3d8d19/-rrp9683_1_198873-172112035649815.jpeg" alt="Foto de la boda">
-</div>
-
-  <!-- Otra franja solo con el fondo rosa -->
-  <div class="espacio-rosa"></div>
-  
-  <!-- Boton ver mapa -->
-  <div class="boton-container">
-    <a class="boton-mapa" href="https://www.google.es/maps/place/Palacio+de+los+Acevedo+de+Hoznayo/@43.3888679,-3.7029997,17z/data=!4m9!3m8!1s0xd4eca55b45f05cd:0x55e6f597cd01e591!5m2!4m1!1i2!8m2!3d43.388864!4d-3.7004194!16s%2Fg%2F121rvmt4?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">VER MAPA</a>
-  </div>
-
-  <script src="script.js"></script>
+  <footer class="footer">
+    <p>Con cariño, María & Diego</p>
+  </footer>
 </body>
 </html>
-
