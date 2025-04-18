@@ -59,16 +59,17 @@ body {
 .detalles-evento {
   text-align: center;
   margin: 40px 0;
+  padding: 0 20px; /* margen lateral para evitar bordes */
 }
 
 .detalles-evento h2 {
-  font-size: 2.5rem; /* Tamaño original */
+  font-size: 2.5rem;
   color: #590a1b;
   text-transform: uppercase;
   margin-bottom: 20px;
-  /* font-weight eliminado para volver al grosor por defecto */
 }
 
+/* Detalle de lugar, hora en gris */
 .detalle-lugar {
   color: #303030;
   font-size: 1.5rem;
@@ -78,4 +79,19 @@ body {
 /* Responsive para móviles */
 @media (max-width: 600px) {
   .banda-inicial p {
-    font-size:
+    font-size: 1.1rem; /* un pelín más pequeño */
+  }
+
+  .autor {
+    font-size: 1rem;
+  }
+
+  .detalles-evento h2 {
+    font-size: 1.7rem; /* un poco más pequeño */
+    font-weight: 400; /* un poco más fino */
+  }
+
+  .detalle-lugar {
+    font-size: 1.5rem; /* Se mantiene igual porque ya está perfecto */
+  }
+}
