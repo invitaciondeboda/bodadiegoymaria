@@ -49,13 +49,33 @@ body {
 }
 
 .imagen-ribete img {
-  max-width: 100%;  /* Mantiene la imagen adaptable al ancho */
+  max-width: 100%;
   height: auto;
   display: block;
-  max-height: 400px; /* Limita la altura máxima para que no se haga gigante */
+  max-height: 400px;
 }
 
 /* Estilo para CEREMONIA Y RECEPCIÓN */
 .detalles-evento {
-  text-align: center; /* Centrado de todo el contenido dentro de esta sección */
+  text-align: center;
   margin: 40px 0;
+}
+
+.detalles-evento h2 {
+  font-size: 2.5rem; /* Tamaño original */
+  color: #590a1b;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  /* font-weight eliminado para volver al grosor por defecto */
+}
+
+.detalle-lugar {
+  color: #303030;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .banda-inicial p {
+    font-size:
