@@ -49,8 +49,9 @@ body {
 }
 
 .imagen-ribete img {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /* Responsive para móviles */
