@@ -1,22 +1,65 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Estilos generales */
 body {
-  margin: 0;
   background-color: #efdae0; /* rosa */
   font-family: 'EB Garamond', serif;
 }
 
-/* Banda burdeos */
+/* Franja burdeos */
 .banda-inicial {
+  width: 100%;
   background-color: #590a1b; /* burdeos */
-  color: white;
-  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.8;
 }
 
-/* Espaciado para el autor */
+/* Contenido dentro de la franja */
+.contenido-cita {
+  color: white;
+  max-width: 800px;
+}
+
+.banda-inicial p {
+  margin: 0.5em 0;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
 .autor {
-  margin-top: 20px;
+  margin-top: 1.5em;
   font-style: italic;
+  font-size: 1.3rem;
+}
+
+/* Imagen decorativa debajo de la franja */
+.imagen-ribete {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #efdae0;
+}
+
+.imagen-ribete img {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .banda-inicial p {
+    font-size: 1.2rem;
+  }
+
+  .autor {
+    font-size: 1.1rem;
+  }
 }
