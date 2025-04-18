@@ -54,6 +54,26 @@ body {
   display: block;
 }
 
+/* Estilo para CEREMONIA Y RECEPCIÓN */
+.detalles-evento {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* Estilo para el texto en mayúsculas "CEREMONIA Y RECEPCIÓN" */
+.detalles-evento h2 {
+  font-size: 2.5rem;
+  color: #590a1b; /* burdeos */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Detalle de lugar, hora en gris */
+.detalle-lugar {
+  color: #303030; /* gris */
+  font-size: 1.5rem;
+}
+
 /* Responsive para móviles */
 @media (max-width: 600px) {
   .banda-inicial p {
@@ -63,4 +83,13 @@ body {
   .autor {
     font-size: 1.1rem;
   }
+
+  .detalles-evento h2 {
+    font-size: 2rem;
+  }
+
+  .detalle-lugar {
+    font-size: 1.3rem;
+  }
 }
+
