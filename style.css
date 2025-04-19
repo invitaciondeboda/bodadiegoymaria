@@ -55,11 +55,11 @@ body {
   max-height: 400px;
 }
 
-/* Estilo para CEREMONIA Y RECEPCIÓN */
+/* Sección CEREMONIA Y RECEPCIÓN */
 .detalles-evento {
   text-align: center;
   margin: 40px 0;
-  padding: 0 20px; /* margen lateral para evitar bordes */
+  padding: 0 20px;
 }
 
 .detalles-evento h2 {
@@ -69,17 +69,34 @@ body {
   margin-bottom: 20px;
 }
 
-/* Detalle de lugar, hora en gris */
+/* Lugar y hora */
 .detalle-lugar {
   color: #303030;
   font-size: 1.5rem;
   line-height: 1.6;
 }
 
+/* Imagen del Palacio */
+.imagen-palacio {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #efdae0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.imagen-palacio img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
 /* Responsive para móviles */
 @media (max-width: 600px) {
   .banda-inicial p {
-    font-size: 1.1rem; /* un pelín más pequeño */
+    font-size: 1.1rem;
   }
 
   .autor {
@@ -87,11 +104,21 @@ body {
   }
 
   .detalles-evento h2 {
-    font-size: 1.7rem; /* un poco más pequeño */
-    font-weight: 400; /* un poco más fino */
+    font-size: 1.7rem;
+    font-weight: 400;
   }
 
   .detalle-lugar {
-    font-size: 1.5rem; /* Se mantiene igual porque ya está perfecto */
+    font-size: 1.5rem;
+  }
+
+  .imagen-palacio {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .imagen-palacio img {
+    width: 100%;
+    height: auto;
   }
 }
