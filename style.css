@@ -58,7 +58,7 @@ body {
 /* Sección CEREMONIA Y RECEPCIÓN */
 .detalles-evento {
   text-align: center;
-  margin: 40px 0;
+  margin: 20px 0 40px 0; /* Menos margen arriba */
   padding: 0 20px;
 }
 
@@ -89,7 +89,7 @@ body {
   max-width: 800px;
   height: auto;
   display: block;
-  border-radius: 8px;
+  /* Quitamos bordes redondeados */
 }
 
 /* Responsive para móviles */
@@ -112,7 +112,7 @@ body {
   }
 
   .imagen-palacio img {
-    width: 100%;
-    max-width: 100%;
+    width: 90%; /* Más pequeño en móvil para dar aire */
+    max-width: 90%;
   }
 }
