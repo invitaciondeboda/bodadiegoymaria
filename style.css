@@ -5,6 +5,7 @@ body {
   color: #303030;
 }
 
+/* Franja con cita */
 .banda-inicial {
   background-color: #590a1b;
   color: white;
@@ -25,18 +26,21 @@ body {
 
 /* Ribetes */
 .imagen-ribete {
-  margin: 20px 0 0;
+  text-align: center;
+  margin: 10px 0;
 }
 .imagen-ribete img {
   width: 100%;
+  max-width: 1000px;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 /* Ceremonia y recepción */
 .detalles-evento {
   text-align: center;
-  padding: 20px 20px 20px;
+  padding: 10px 20px 20px;
   animation: fadeIn 2s ease-in;
 }
 
@@ -87,7 +91,7 @@ body {
   background-color: #590a1b;
   text-align: center;
   color: white;
-  padding: 50px 20px 30px;
+  padding: 50px 20px 20px;
 }
 
 .texto-cuenta {
@@ -96,10 +100,15 @@ body {
 }
 
 #countdown {
-  font-size: 2rem;
-  margin: 10px 0 20px;
+  font-size: 2.5rem;
   font-weight: 400;
   font-family: 'EB Garamond', serif;
+}
+
+#countdown span {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 4px;
 }
 
 /* Franja imagen final */
@@ -108,13 +117,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0 50px;
+  padding: 10px 0 30px;
 }
 
 .banda-imagen img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Sección Planning */
+.planning {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #efdae0;
+}
+
+.planning h2 {
+  font-size: 2.2rem;
+  color: #590a1b;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.planning-dia {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 5px 0;
+  color: #303030;
 }
 
 /* Animación fade-in */
@@ -134,7 +164,7 @@ body {
   }
 
   .detalles-evento h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 300;
     padding: 0 10px;
   }
@@ -152,7 +182,7 @@ body {
   }
 
   .imagen-ribete img {
-    width: 95%;
+    width: 90%;
   }
 
   .texto-cuenta {
@@ -160,15 +190,24 @@ body {
   }
 
   #countdown {
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  #countdown span {
+    font-size: 1rem;
+    margin-left: 2px;
   }
 
   .banda-imagen img {
     width: 85%;
   }
 
-  .texto-final {
-    margin-bottom: 10px;
+  .planning h2 {
+    font-size: 1.8rem;
+  }
+
+  .planning-dia {
+    font-size: 1.4rem;
   }
 }
