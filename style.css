@@ -24,6 +24,9 @@ body {
 }
 
 /* Ribetes */
+.imagen-ribete {
+  margin: 20px 0 0;
+}
 .imagen-ribete img {
   width: 100%;
   height: auto;
@@ -33,13 +36,14 @@ body {
 /* Ceremonia y recepción */
 .detalles-evento {
   text-align: center;
-  padding: 40px 20px 20px;
+  padding: 20px 20px 20px;
   animation: fadeIn 2s ease-in;
 }
 
 .detalles-evento h2 {
   color: #590a1b;
   font-size: 2.2rem;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -83,7 +87,7 @@ body {
   background-color: #590a1b;
   text-align: center;
   color: white;
-  padding: 50px 20px;
+  padding: 50px 20px 30px;
 }
 
 .texto-cuenta {
@@ -92,9 +96,10 @@ body {
 }
 
 #countdown {
-  font-size: 2.5rem;
-  margin: 15px 0;
-  font-weight: bold;
+  font-size: 2rem;
+  margin: 10px 0 20px;
+  font-weight: 400;
+  font-family: 'EB Garamond', serif;
 }
 
 /* Franja imagen final */
@@ -103,7 +108,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 20px 0 50px;
 }
 
 .banda-imagen img {
@@ -129,7 +134,8 @@ body {
   }
 
   .detalles-evento h2 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    font-weight: 300;
     padding: 0 10px;
   }
 
@@ -138,11 +144,15 @@ body {
   }
 
   .imagen-palacio img {
-    width: 90%;
+    width: 85%;
   }
 
   .imagen-mapa img {
     width: 90%;
+  }
+
+  .imagen-ribete img {
+    width: 95%;
   }
 
   .texto-cuenta {
@@ -150,10 +160,15 @@ body {
   }
 
   #countdown {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
   }
 
   .banda-imagen img {
     width: 85%;
+  }
+
+  .texto-final {
+    margin-bottom: 10px;
   }
 }
