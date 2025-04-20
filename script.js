@@ -1,9 +1,7 @@
-// Cuenta atrás para el 8 de noviembre de 2025 a las 12:30
 const targetDate = new Date("2025-11-08T12:30:00").getTime();
-
 const countdownElement = document.getElementById("countdown");
 
-const updateCountdown = () => {
+function updateCountdown() {
   const now = new Date().getTime();
   const distance = targetDate - now;
 
@@ -17,7 +15,7 @@ const updateCountdown = () => {
   const minutes = Math.floor((distance / (1000 * 60)) % 60);
   const seconds = Math.floor((distance / 1000) % 60);
 
-  countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-};
+  countdownElement.innerHTML = `${days} DÍAS ${hours} HORAS ${minutes} MIN ${seconds} SEG`;
+}
 
 setInterval(updateCountdown, 1000);
