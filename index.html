@@ -2,116 +2,75 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Invitación de Boda</title>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- Cita inicial -->
-  <div class="banda-inicial">
+
+  <!-- Franja con cita -->
+  <section class="banda-inicial">
     <div class="contenido-cita">
-      “Cuando nos vimos por primera vez,<br>
-      no hicimos más que recordarnos<br>
-      por qué nos habíamos querido<br>
-      en todas las vidas.”
-      <div class="autor">Antonio Machado</div>
+      <p>“Cuando nos vimos por primera vez,<br/>
+      no hicimos más que recordarnos<br/>
+      por qué nos habíamos querido<br/>
+      en todas las vidas”.</p>
+      <p class="autor">Antonio Machado</p>
     </div>
-  </div>
+  </section>
 
-  <!-- Ribete superior -->
+  <!-- Imagen ribete superior -->
   <div class="imagen-ribete">
-    <img src="ribetes/ribetesuperior.jpg" alt="ribete superior" />
+    <img src="ribetes/ribetesuperior.jpg" alt="Ribete decorativo" />
   </div>
 
-  <!-- Ceremonia y recepción -->
-  <div class="detalles-evento fade-in">
+  <!-- CEREMONIA Y RECEPCIÓN -->
+  <section class="detalles-evento fade-in">
     <h2>CEREMONIA Y RECEPCIÓN</h2>
     <div class="detalle-lugar">
       <p>Palacio de los Acevedo,</p>
       <p>Hoznayo</p>
       <p>12:30</p>
     </div>
-  </div>
+  </section>
 
-  <!-- Imagen del palacio -->
+  <!-- Imagen Palacio -->
   <div class="imagen-palacio">
-    <img src="Palacio.jpg" alt="Foto del Palacio" />
+    <img src="Palacio.jpg" alt="Palacio de los Acevedo" />
   </div>
 
-  <!-- Imagen del mapa con enlace -->
+  <!-- Imagen Mapa -->
   <div class="imagen-mapa">
-    <a href="https://www.google.es/maps/place/Palacio+de+los+Acevedo+de+Hoznayo/@43.388864,-3.7029943,17z/data=!4m9..." target="_blank">
-      <img src="ribetes/maps.jpg" alt="Mapa ubicación" />
+    <a href="https://www.google.es/maps/place/Palacio+de+los+Acevedo+de+Hoznayo/@43.388864,-3.7029943,17z/data=!4m9!3m8!1s0xd4eca55b45f05cd:0x55e6f597cd01e591!5m2!4m1!1i2!8m2!3d43.388864!4d-3.7004194!16s%2Fg%2F121rvmt4?entry=ttu" target="_blank">
+      <img src="ribetes/maps.jpg" alt="Mapa - Cómo llegar" />
     </a>
   </div>
 
-  <!-- Ribete inferior -->
+  <!-- Imagen ribete inferior -->
   <div class="imagen-ribete">
-    <img src="ribetes/ribeteinferior.jpg" alt="ribete inferior" />
+    <img src="ribetes/ribeteinferior.jpg" alt="Decoración inferior" />
   </div>
 
-  <!-- Cuenta atrás -->
-  <div class="banda-cuenta">
-    <div class="texto-cuenta">Faltan</div>
-    <div class="cuenta-grid" id="cuenta-atras">
-      <div class="cuenta-item">
-        <div class="numero" id="dias">0</div>
-        <div class="unidad">DÍAS</div>
-      </div>
-      <div class="cuenta-item">
-        <div class="numero" id="horas">0</div>
-        <div class="unidad">HORAS</div>
-      </div>
-      <div class="cuenta-item">
-        <div class="numero" id="minutos">0</div>
-        <div class="unidad">MIN</div>
-      </div>
-      <div class="cuenta-item">
-        <div class="numero" id="segundos">0</div>
-        <div class="unidad">SEG</div>
-      </div>
-    </div>
-    <div class="texto-final">para nuestra boda</div>
-  </div>
+  <!-- Franja burdeos con cuenta atrás -->
+  <section class="banda-cuenta">
+    <p class="texto-cuenta">Faltan</p>
+    <div id="countdown" class="cuenta-grid"></div>
+    <p class="texto-cuenta texto-final">para nuestra boda</p>
+  </section>
 
-  <!-- Banda con imagen Foto02 -->
+  <!-- Franja burdeos con imagen Foto02 -->
   <div class="banda-imagen">
-    <img src="ribetes/Foto02.jpg" alt="Foto02" />
+    <img src="ribetes/Foto02.jpg" alt="Foto especial" />
   </div>
 
-  <!-- Planning -->
-  <div class="detalles-evento fade-in">
+  <!-- Sección Planning -->
+  <section class="detalles-evento">
     <h2>PLANNING</h2>
-    <p class="planning-dia">Sábado</p>
-    <p class="planning-dia">8-11-2025</p>
-  </div>
-
-  <!-- Timeline -->
-  <div class="timeline">
-    <div class="timeline-item animado">
-      <div class="circle"></div>
-      <div class="texto">Llegada de invitados - 12:00</div>
-    </div>
-    <div class="timeline-item animado">
-      <div class="circle"></div>
-      <div class="texto">Ceremonia - 12:30</div>
-    </div>
-    <div class="timeline-item animado">
-      <div class="circle"></div>
-      <div class="texto">Cóctel - 13:15</div>
-    </div>
-    <div class="timeline-item animado">
-      <div class="circle"></div>
-      <div class="texto">Banquete - 14:30</div>
-    </div>
-    <div class="timeline-item animado">
-      <div class="circle"></div>
-      <div class="texto">Fiesta - 17:00</div>
-    </div>
-  </div>
+    <p class="planning-dia"><em>Sábado</em></p>
+    <p class="planning-dia"><em>8-11-2025</em></p>
+  </section>
 
   <script src="script.js"></script>
 </body>
 </html>
-
