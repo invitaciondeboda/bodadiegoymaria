@@ -224,7 +224,7 @@ body {
 }
 
 .desplegable-btn {
-  background-color: #590a1b; /* Burdeos */
+  background-color: #590a1b;
   color: white;
   padding: 12px 20px;
   font-size: 1.2rem;
@@ -232,7 +232,13 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.desplegable-btn .flecha {
+  font-size: 1.2rem;
 }
 
 .desplegable-btn:hover {
@@ -241,17 +247,23 @@ body {
 
 .desplegable-contenido {
   display: none;
+  margin: 20px auto;
   text-align: left;
-  margin-top: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  color: #333;
+  max-width: 90%;
 }
 
 .desplegable-contenido ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .desplegable-contenido li {
-  margin: 10px 0;
+  margin: 12px 0;
   font-size: 1rem;
 }
 
@@ -264,11 +276,9 @@ body {
   text-decoration: underline;
 }
 
-/* Mostrar el contenido del desplegable cuando se activa */
 .desplegable-btn.active + .desplegable-contenido {
   display: block;
 }
-
 
 
 @media (max-width: 768px) {
@@ -319,7 +329,16 @@ body {
 
   .desplegable-btn {
     font-size: 1rem;
-    padding: 10px 18px;
+    padding: 10px 16px;
+  }
+
+  .desplegable-contenido {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .desplegable-contenido li {
+    font-size: 0.95rem;
   }
 }
 
