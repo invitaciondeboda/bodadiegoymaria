@@ -24,18 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting && !entry.target.classList.contains('visible')) {
-        entry.target.classList.add('visible'); // Añadir clase visible solo una vez
+        entry.target.classList.add('visible');
       }
     });
   }, {
-    threshold: 0, // Se activa cuando cualquier parte de la imagen entra en la vista
-    rootMargin: "0px 0px -50% 0px" // Activación cuando la imagen está en el centro de la pantalla
+    threshold: 0,
+    rootMargin: "0px 0px -50% 0px"
   });
 
   revealImages.forEach(img => observer.observe(img));
 });
 
-// Función para activar/desactivar el desplegable
+// Activar/desactivar el desplegable
 document.querySelector(".desplegable-btn").addEventListener("click", function () {
   this.classList.toggle("active");
 });
