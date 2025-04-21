@@ -3,234 +3,210 @@ body {
   font-family: 'EB Garamond', serif;
   background-color: #efdae0;
   color: #303030;
+  text-align: center;
 }
 
-/* Cita inicial */
-.banda-inicial {
+.cita {
   background-color: #590a1b;
   color: white;
-  padding: 30px 20px;
-  text-align: center;
+  padding: 2rem 1rem;
 }
 
 .contenido-cita {
   font-size: 1.5rem;
+  margin: 0;
+}
+
+.ribete {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.evento {
+  margin-top: 1rem;
+}
+
+.evento h2 {
+  color: #590a1b;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.evento-lugar {
+  color: #303030;
+  font-size: 1.3rem;
   line-height: 1.6;
 }
 
-.autor {
-  font-style: italic;
-  margin-top: 20px;
+.imagen-ajustada {
+  padding: 0 1rem;
+  margin: 1rem 0;
 }
 
-/* Imágenes ribete */
-.imagen-ribete {
-  text-align: center;
-}
-
-.imagen-ribete img {
+.imagen-ajustada img {
   width: 100%;
-  max-width: 600px;
-}
-
-/* Evento */
-.detalles-evento {
-  text-align: center;
-  margin: 30px 20px;
-}
-
-.detalles-evento h2 {
-  font-size: 1.8rem;
-  color: #590a1b;
-  font-weight: normal;
-  letter-spacing: 1px;
-}
-
-.detalle-lugar p,
-.planning-dia {
-  color: #303030;
-  margin: 5px 0;
-  font-size: 1.2rem;
-}
-
-.planning-dia {
-  font-style: italic;
-}
-
-/* Imagen Palacio */
-.imagen-palacio {
-  text-align: center;
-  margin: 20px 15px;
-}
-
-.imagen-palacio img {
-  width: 100%;
-  max-width: 700px;
+  height: auto;
+  display: block;
   border-radius: 0;
 }
 
-/* Imagen Maps */
-.imagen-mapa {
-  text-align: center;
-  margin: 30px 15px;
-}
-
-.imagen-mapa img {
-  width: 100%;
-  max-width: 500px;
-}
-
-/* Cuenta atrás */
-.banda-cuenta {
-  background-color: #590a1b;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-}
-
-.texto-cuenta {
-  font-size: 1.6rem;
-  margin: 10px 0;
-}
-
-.cuenta-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  font-family: 'EB Garamond', serif;
-  margin: 20px 0;
-}
-
-.cuenta-item {
-  text-align: center;
-}
-
-.cuenta-item .numero {
-  font-size: 1.2rem;
-}
-
-.cuenta-item .unidad {
-  font-size: 0.9rem;
-}
-
-/* Imagen final */
-.banda-imagen {
-  background-color: #590a1b;
-  text-align: center;
-  padding: 30px 15px;
-}
-
-.banda-imagen img {
-  width: 100%;
+.imagen-centro {
+  display: block;
+  margin: 1rem auto;
+  width: 90%;
   max-width: 600px;
 }
 
-/* Timeline */
-.timeline-section {
+.cuenta {
+  background-color: #590a1b;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.countdown-label {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+.banda-foto {
+  background-color: #590a1b;
+  padding: 1rem;
+}
+
+.banda-foto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.planning-texto {
+  margin: 2rem 1rem;
+}
+
+.planning-texto h2 {
+  color: #590a1b;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.planning-texto p {
+  font-style: italic;
+  color: #303030;
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+}
+
+.timeline-container {
   position: relative;
-  padding: 100px 0;
-  background-color: #efdae0;
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 800px;
 }
 
 .timeline-line {
   position: absolute;
-  left: 50%;
+  left: 30px;
   top: 0;
   width: 4px;
-  height: 0;
   background-color: #590a1b;
-  transform: translateX(-50%);
-  transition: height 1s ease;
-  z-index: 0;
+  height: 0;
+  transition: height 0.3s ease-out;
 }
 
 .timeline-item {
   position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 100px auto;
-  opacity: 0;
-  transition: opacity 1s ease;
-  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 4rem;
 }
 
-.timeline-item .circle {
+.timeline-circle {
   width: 20px;
   height: 20px;
   background-color: #590a1b;
   border-radius: 50%;
-  margin: 0 auto 20px;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  left: 20px;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
 }
 
-.timeline-item img {
+.timeline-image {
+  margin-left: 60px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out;
+}
+
+.timeline-image img {
   width: 100%;
   max-width: 500px;
-  border-radius: 8px;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
-.timeline-item.active {
+.timeline-item.visible .timeline-circle,
+.timeline-item.visible .timeline-image {
   opacity: 1;
+  transform: translateY(0);
 }
 
-.timeline-section.active .timeline-line {
-  height: 100%;
-}
-
-/* Animaciones */
-.fade-in {
-  animation: fadeIn 2s ease-in;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .contenido-cita {
     font-size: 1.2rem;
   }
 
-  .imagen-ribete img {
-    max-width: 400px;
+  .evento h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0.5rem 1rem 0.3rem;
   }
 
-  .imagen-palacio img,
-  .imagen-mapa img,
-  .banda-imagen img {
-    max-width: 90%;
+  .ribete {
+    width: 90%;
+  }
+
+  .imagen-ajustada img {
+    width: 90%;
     margin: 0 auto;
   }
 
-  .detalles-evento h2 {
+  .planning-texto h2 {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
   }
 
-  .cuenta-item .numero {
+  .countdown-item {
     font-size: 1rem;
   }
 
-  .cuenta-item .unidad {
+  .countdown-label {
     font-size: 0.8rem;
   }
 
-  .timeline-item {
-    margin: 60px auto;
-  }
-
-  .timeline-item img {
-    max-width: 90%;
-  }
-
-  .timeline-line {
-    left: 20px;
-  }
-
-  .timeline-item .circle {
-    margin-left: 20px;
+  .banda-foto img {
+    width: 90%;
   }
 }
