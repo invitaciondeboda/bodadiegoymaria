@@ -1,12 +1,98 @@
-/* Fondo de la página con la imagen */
+/* --------------------------- ESTILOS GENERALES --------------------------- */
+
+body {
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+  color: #303030;
+}
+
+/* --------------------------- FONDO Y ESTRUCTURA --------------------------- */
+
 .fondo-imagen {
   background-image: url('ribetes/fondo.jpg');
   background-size: cover;
   background-position: center;
-  padding-bottom: 50px; /* Para que haya espacio en la parte inferior */
+  padding-bottom: 50px;
 }
 
-/* Línea vertical burdeos */
+.imagen-ribete img,
+.imagen-palacio img,
+.imagen-mapa img,
+.banda-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banda-imagen img {
+  margin-top: 20px;
+}
+
+/* --------------------------- ESTILOS DE LA BANDA INICIAL --------------------------- */
+
+.banda-inicial {
+  background-color: #590a1b;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contenido-cita p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.autor {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* --------------------------- ESTILOS DE LOS DETALLES DEL EVENTO --------------------------- */
+
+.detalles-evento h2 {
+  font-family: 'EB Garamond', serif;
+  color: #590a1b;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.detalle-lugar p {
+  font-size: 1.2rem;
+  color: #303030;
+  text-align: center;
+}
+
+/* --------------------------- ESTILOS DE LA CUENTA ATRÁS --------------------------- */
+
+.banda-cuenta {
+  background-color: #590a1b;
+  padding: 60px 0;
+  color: white;
+  text-align: center;
+}
+
+.cuenta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.cuenta-grid div {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.texto-cuenta {
+  font-family: 'EB Garamond', serif;
+  font-size: 2.5rem;
+}
+
+.texto-final {
+  font-size: 1.5rem;
+}
+
+/* --------------------------- ESTILOS PARA LA LÍNEA VERTICAL Y CÍRCULOS --------------------------- */
+
 .linea-burdeos {
   position: absolute;
   width: 4px;
@@ -74,12 +160,45 @@
   }
 }
 
-/* Media query para ajustar los círculos en móviles */
+/* Estilo de los números de la cuenta atrás */
+.count-item {
+  text-align: center;
+}
+
+.count-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.count-label {
+  font-size: 1rem;
+  font-weight: lighter;
+  opacity: 0.5;
+}
+
+/* Estilo de PLANNING */
+.detalles-evento h2 {
+  font-family: 'EB Garamond', serif;
+  color: #590a1b;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.planning-dia {
+  color: gray;
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+/* --------------------------- ESTILOS PARA DISPOSITIVOS MÓVILES --------------------------- */
+
 @media (max-width: 768px) {
   .timeline {
     padding-left: 10%;
     padding-right: 10%;
   }
+
   .evento .circulo {
     width: 20px;
     height: 20px;
@@ -92,6 +211,27 @@
   .evento .texto {
     font-size: 0.9rem;
   }
+
+  /* Cuenta atrás en móvil */
+  .count-item {
+    font-size: 1rem;
+  }
+
+  .count-number {
+    font-size: 1.5rem;
+  }
+
+  .count-label {
+    font-size: 0.8rem;
+  }
 }
 
-
+/* Estilo para las imágenes con ribetes */
+.imagen-ribete img,
+.imagen-palacio img,
+.imagen-mapa img,
+.banda-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
