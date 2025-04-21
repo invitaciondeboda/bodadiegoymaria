@@ -162,12 +162,6 @@ body {
   transition-delay: 0.25s;
 }
 
-.galeria-planning {
-  display: flex;
-  flex-direction: column;
-  gap: 0; /* Sin espacio entre las imágenes */
-}
-
 
 /* Estilo para la imagen de asistencia */
 .imagen-asistencia {
