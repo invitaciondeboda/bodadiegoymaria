@@ -5,6 +5,11 @@ body {
   color: #303030;
 }
 
+.imagen-inicial img {
+  width: 100%;
+  max-width: 600px; /* Ajusta el tamaño máximo de la imagen */  
+  margin: 20px auto; /* Centra la imagen en la página */
+}
 .banda-inicial {
   background-color: #590a1b;
   color: white;
