@@ -196,11 +196,6 @@ body {
 
 
 
-.desplegable {
-  text-align: center;
-  margin: 20px auto;
-}
-
 .desplegable-btn {
   background-color: #590a1b;
   color: white;
@@ -211,13 +206,19 @@ body {
   cursor: pointer;
   border-radius: 5px;
   display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  align-items: center; /* 🔁 Esto centra verticalmente */
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s;
 }
 
 .desplegable-btn .flecha {
-  font-size: 1.2rem;
-  line-height: 1;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.desplegable-btn.active .flecha {
+  transform: rotate(180deg); /* 🔁 Gira la flecha */
 }
 
 .desplegable-btn:hover {
