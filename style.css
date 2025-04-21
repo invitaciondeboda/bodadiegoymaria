@@ -184,7 +184,7 @@ body {
   margin-top: 10px; /* Reducir el espacio entre la imagen y el botón */
 }
 
-/* Estilo de los enlaces del botón de confirmación */
+/* Estilo del enlace del botón de confirmación */
 .boton-confirmar a {
   background-color: #590a1b; /* Burdeos */
   color: white;
@@ -194,13 +194,10 @@ body {
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
-  margin-bottom: 5px; /* Reducir el espacio entre los dos botones */
+  margin-bottom: 5px; /* Reducir el espacio entre las líneas */
   transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/* Estilo para el segundo enlace (Haz clic) debajo del primero */
-.boton-confirmar a:nth-child(2) {
-  font-size: 1rem; /* Reducir el tamaño de la fuente para el texto (Haz clic) */
+  line-height: 1.4; /* Asegura un buen espaciado entre las dos líneas de texto */
+  text-align: center;
 }
 
 /* Efecto al pasar el cursor sobre el botón */
