@@ -1,37 +1,37 @@
+// Cuenta atrás
 const targetDate = new Date("2025-11-08T12:30:00").getTime();
-const countdownElement = document.getElementById("countdown");
 
 function updateCountdown() {
   const now = new Date().getTime();
-  const distance = targetDate - now;
+  const diff = targetDate - now;
 
-  if (distance < 0) {
-    countdownElement.innerHTML = "<p>¡Ya es el gran día!</p>";
-    return;
-  }
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
 
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((distance / (1000 * 60)) % 60);
-  const seconds = Math.floor((distance / 1000) % 60);
-
-  countdownElement.innerHTML = `
-    <div class="cuenta-item">
-      <div class="numero">${days}</div>
-      <div class="unidad">DÍAS</div>
-    </div>
-    <div class="cuenta-item">
-      <div class="numero">${hours}</div>
-      <div class="unidad">HORAS</div>
-    </div>
-    <div class="cuenta-item">
-      <div class="numero">${minutes}</div>
-      <div class="unidad">MIN</div>
-    </div>
-    <div class="cuenta-item">
-      <div class="numero">${seconds}</div>
-      <div class="unidad">SEG</div>
-    </div>`;
+  document.getElementById("days").textContent = days;
+  document.getElementById("hours").textContent = hours;
+  document.getElementById("minutes").textContent = minutes;
+  document.getElementById("seconds").textContent = seconds;
 }
 
 setInterval(updateCountdown, 1000);
+updateCountdown();
+
+// Efecto scroll imágenes
+const imgs = document.querySelectorAll(".scroll-img");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    } else {
+      entry.target.classList.remove("visible");
+    }
+  });
+}, {
+  threshold: 0.5
+});
+
+imgs.forEach(img => observer.observe(img));
