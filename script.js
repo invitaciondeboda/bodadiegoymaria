@@ -18,19 +18,21 @@ const countdown = () => {
 setInterval(countdown, 1000);
 
 // Scroll efecto de barrido (reveal/disappear)
-const revealImages = document.querySelectorAll('.scroll-reveal');
+document.addEventListener('DOMContentLoaded', () => {
+  const revealImages = document.querySelectorAll('.scroll-reveal');
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    } else {
-      entry.target.classList.remove('visible');
-    }
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, {
+    threshold: 0.5, // El 50% de la imagen debe estar visible para que se active
+    rootMargin: "0px 0px -50% 0px" // Se activa cuando la imagen está en el centro
   });
-}, {
-  threshold: 0,
-  rootMargin: "0px 0px -80% 0px"
-});
 
-revealImages.forEach(img => observer.observe(img));
+  revealImages.forEach(img => observer.observe(img));
+});
