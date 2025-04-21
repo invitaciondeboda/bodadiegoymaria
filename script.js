@@ -6,7 +6,7 @@ function updateCountdown() {
   const distance = targetDate - now;
 
   if (distance < 0) {
-    countdownElement.innerHTML = "¡Ya es el gran día!";
+    countdownElement.innerHTML = "<p>¡Ya es el gran día!</p>";
     return;
   }
 
@@ -16,10 +16,22 @@ function updateCountdown() {
   const seconds = Math.floor((distance / 1000) % 60);
 
   countdownElement.innerHTML = `
-    ${days}<span> DÍAS</span> 
-    ${hours}<span> HORAS</span> 
-    ${minutes}<span> MIN</span> 
-    ${seconds}<span> SEG</span>`;
+    <div class="cuenta-item">
+      <div class="numero">${days}</div>
+      <div class="unidad">DÍAS</div>
+    </div>
+    <div class="cuenta-item">
+      <div class="numero">${hours}</div>
+      <div class="unidad">HORAS</div>
+    </div>
+    <div class="cuenta-item">
+      <div class="numero">${minutes}</div>
+      <div class="unidad">MIN</div>
+    </div>
+    <div class="cuenta-item">
+      <div class="numero">${seconds}</div>
+      <div class="unidad">SEG</div>
+    </div>`;
 }
 
 setInterval(updateCountdown, 1000);
