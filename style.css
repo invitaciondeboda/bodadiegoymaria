@@ -1,4 +1,3 @@
-/* Fuente general */
 body {
   margin: 0;
   font-family: 'EB Garamond', serif;
@@ -6,7 +5,7 @@ body {
   color: #303030;
 }
 
-/* Sección burdeos para la cita */
+/* Cita inicial */
 .banda-inicial {
   background-color: #590a1b;
   color: white;
@@ -24,10 +23,9 @@ body {
   margin-top: 20px;
 }
 
-/* Ribetes */
+/* Imágenes ribete */
 .imagen-ribete {
   text-align: center;
-  margin: 0 auto;
 }
 
 .imagen-ribete img {
@@ -35,10 +33,10 @@ body {
   max-width: 600px;
 }
 
-/* Sección CEREMONIA Y RECEPCIÓN y PLANNING */
+/* Evento */
 .detalles-evento {
   text-align: center;
-  margin: 40px 20px;
+  margin: 30px 20px;
 }
 
 .detalles-evento h2 {
@@ -48,13 +46,18 @@ body {
   letter-spacing: 1px;
 }
 
-.detalle-lugar p {
+.detalle-lugar p,
+.planning-dia {
   color: #303030;
   margin: 5px 0;
   font-size: 1.2rem;
 }
 
-/* Imagen del palacio */
+.planning-dia {
+  font-style: italic;
+}
+
+/* Imagen Palacio */
 .imagen-palacio {
   text-align: center;
   margin: 20px 15px;
@@ -66,7 +69,7 @@ body {
   border-radius: 0;
 }
 
-/* Imagen del mapa */
+/* Imagen Maps */
 .imagen-mapa {
   text-align: center;
   margin: 30px 15px;
@@ -77,7 +80,7 @@ body {
   max-width: 500px;
 }
 
-/* Banda burdeos cuenta atrás */
+/* Cuenta atrás */
 .banda-cuenta {
   background-color: #590a1b;
   color: white;
@@ -90,11 +93,6 @@ body {
   margin: 10px 0;
 }
 
-.texto-final {
-  margin-top: 20px;
-}
-
-/* Estructura de la cuenta atrás */
 .cuenta-grid {
   display: flex;
   justify-content: center;
@@ -112,10 +110,10 @@ body {
 }
 
 .cuenta-item .unidad {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
-/* Banda con imagen Foto02 */
+/* Imagen final */
 .banda-imagen {
   background-color: #590a1b;
   text-align: center;
@@ -127,14 +125,60 @@ body {
   max-width: 600px;
 }
 
-/* Planning */
-.planning-dia {
-  font-style: italic;
-  color: #303030;
-  margin: 5px 0;
+/* Timeline */
+.timeline-section {
+  position: relative;
+  padding: 100px 0;
+  background-color: #efdae0;
 }
 
-/* Fade-in */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 0;
+  background-color: #590a1b;
+  transform: translateX(-50%);
+  transition: height 1s ease;
+  z-index: 0;
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 100px auto;
+  opacity: 0;
+  transition: opacity 1s ease;
+  text-align: center;
+}
+
+.timeline-item .circle {
+  width: 20px;
+  height: 20px;
+  background-color: #590a1b;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-item img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.timeline-item.active {
+  opacity: 1;
+}
+
+.timeline-section.active .timeline-line {
+  height: 100%;
+}
+
+/* Animaciones */
 .fade-in {
   animation: fadeIn 2s ease-in;
 }
@@ -154,13 +198,11 @@ body {
     max-width: 400px;
   }
 
-  .imagen-palacio img {
+  .imagen-palacio img,
+  .imagen-mapa img,
+  .banda-imagen img {
     max-width: 90%;
     margin: 0 auto;
-  }
-
-  .imagen-mapa img {
-    max-width: 90%;
   }
 
   .detalles-evento h2 {
@@ -169,14 +211,26 @@ body {
   }
 
   .cuenta-item .numero {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .cuenta-item .unidad {
     font-size: 0.8rem;
   }
 
-  .banda-imagen img {
+  .timeline-item {
+    margin: 60px auto;
+  }
+
+  .timeline-item img {
     max-width: 90%;
+  }
+
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-item .circle {
+    margin-left: 20px;
   }
 }
