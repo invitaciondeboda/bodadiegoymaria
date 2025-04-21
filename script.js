@@ -1,42 +1,44 @@
 // Cuenta atrás
 const countdown = () => {
-  const target = new Date("November 8, 2025 12:30:00").getTime();
+  const endDate = new Date("November 8, 2025 12:30:00").getTime();
   const now = new Date().getTime();
-  const diff = target - now;
+  const timeLeft = endDate - now;
 
-  const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const horas = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutos = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  const segundos = Math.floor((diff % (1000 * 60)) / 1000);
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-  document.getElementById("dias").textContent = dias;
-  document.getElementById("horas").textContent = horas;
-  document.getElementById("minutos").textContent = minutos;
-  document.getElementById("segundos").textContent = segundos;
+  document.getElementById("dias").innerText = days;
+  document.getElementById("horas").innerText = hours;
+  document.getElementById("minutos").innerText = minutes;
+  document.getElementById("segundos").innerText = seconds;
 };
 
 setInterval(countdown, 1000);
 
-// Timeline scroll animation
-document.addEventListener("DOMContentLoaded", () => {
-  const timelineItems = document.querySelectorAll(".timeline-item");
-  const timelineLine = document.querySelector(".timeline-line");
+// Línea de planning animada y aparición de imágenes
+const timelineItems = document.querySelectorAll(".timeline-item");
+const timelineLine = document.querySelector(".timeline-line");
 
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
+function revealOnScroll() {
+  let windowBottom = window.scrollY + window.innerHeight;
+  let lastVisibleIndex = -1;
 
-          const activeCount = document.querySelectorAll(".timeline-item.active").length;
-          const total = timelineItems.length;
-          const percentage = (activeCount / total) * 100;
-          timelineLine.style.height = `${percentage}%`;
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
+  timelineItems.forEach((item, index) => {
+    const itemTop = item.offsetTop;
+    if (windowBottom > itemTop + 50) {
+      item.classList.add("visible");
+      lastVisibleIndex = index;
+    }
+  });
 
-  timelineItems.forEach(item => observer.observe(item));
-});
+  if (lastVisibleIndex >= 0) {
+    const lastItem = timelineItems[lastVisibleIndex];
+    const lineHeight = lastItem.offsetTop + lastItem.offsetHeight / 2;
+    timelineLine.style.height = `${lineHeight}px`;
+  }
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
