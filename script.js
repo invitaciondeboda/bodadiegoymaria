@@ -39,3 +39,23 @@ document.addEventListener('DOMContentLoaded', () => {
 document.querySelector(".desplegable-btn").addEventListener("click", function () {
   this.classList.toggle("active");
 });
+
+
+document.getElementById("botonAbrir").addEventListener("click", function () {
+  const sobre = document.querySelector(".sobre");
+  const pantallaInicial = document.getElementById("pantalla-inicial");
+  const contenido = document.getElementById("contenido-principal");
+  const audio = document.getElementById("audioBoda");
+
+  // Añadir clase para activar animación
+  sobre.classList.add("sobre-abierta");
+
+  // Reproducir audio
+  audio.play();
+
+  // Esperar a que termine la animación antes de mostrar contenido
+  setTimeout(() => {
+    pantallaInicial.style.display = "none";
+    contenido.style.display = "block";
+  }, 1200); // duración de la animación
+});
