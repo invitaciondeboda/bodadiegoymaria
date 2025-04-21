@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+      if (entry.isIntersecting && !entry.target.classList.contains('visible')) {
+        entry.target.classList.add('visible'); // Añadir clase visible solo una vez
       }
     });
   }, {
-    threshold: 0, // Cuando el 0% de la imagen sea visible se activa
-    rootMargin: "0px 0px -50% 0px" // Se activa cuando la imagen está en el centro
+    threshold: 0, // Se activa cuando cualquier parte de la imagen entra en la vista
+    rootMargin: "0px 0px -50% 0px" // Activación cuando la imagen está en el centro de la pantalla
   });
 
   revealImages.forEach(img => observer.observe(img));
