@@ -1,237 +1,180 @@
-/* --------------------------- ESTILOS GENERALES --------------------------- */
-
+/* Fondo de la página */
 body {
   margin: 0;
   font-family: 'EB Garamond', serif;
-  color: #303030;
-}
-
-/* --------------------------- FONDO Y ESTRUCTURA --------------------------- */
-
-.fondo-imagen {
+  background-color: #efdae0;
   background-image: url('ribetes/fondo.jpg');
   background-size: cover;
   background-position: center;
-  padding-bottom: 50px;
+  color: #303030;
 }
 
-.imagen-ribete img,
-.imagen-palacio img,
-.imagen-mapa img,
-.banda-imagen img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.banda-imagen img {
-  margin-top: 20px;
-}
-
-/* --------------------------- ESTILOS DE LA BANDA INICIAL --------------------------- */
-
+/* Sección de la cita y todo lo anterior como ya estaba */
 .banda-inicial {
   background-color: #590a1b;
   color: white;
-  padding: 60px 0;
+  padding: 30px 20px;
   text-align: center;
 }
 
-.contenido-cita p {
+.contenido-cita {
   font-size: 1.5rem;
   line-height: 1.6;
 }
 
 .autor {
-  font-size: 1.2rem;
   font-style: italic;
+  margin-top: 20px;
 }
 
-/* --------------------------- ESTILOS DE LOS DETALLES DEL EVENTO --------------------------- */
-
-.detalles-evento h2 {
-  font-family: 'EB Garamond', serif;
-  color: #590a1b;
-  font-size: 2.5rem;
+/* Círculos y timeline */
+.timeline {
+  margin-top: 80px;
+  padding: 50px 20px;
   text-align: center;
 }
 
-.detalle-lugar p {
+.timeline-background {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  opacity: 0.5;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #590a1b;
+  margin: 0 auto;
+  transition: transform 0.5s ease;
+}
+
+.time {
   font-size: 1.2rem;
   color: #303030;
-  text-align: center;
+  margin-top: 10px;
 }
 
-/* --------------------------- ESTILOS DE LA CUENTA ATRÁS --------------------------- */
+.event {
+  font-size: 1rem;
+  color: rgba(48, 48, 48, 0.5);
+  transition: color 0.3s ease;
+  margin-top: 5px;
+}
 
+.timeline-item.visible .circle {
+  transform: scale(1.2);
+}
+
+.timeline-item.visible .event {
+  color: #303030;
+}
+
+/* Franja burdeos con cuenta atrás */
 .banda-cuenta {
   background-color: #590a1b;
-  padding: 60px 0;
   color: white;
   text-align: center;
-}
-
-.cuenta-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-
-.cuenta-grid div {
-  text-align: center;
-  font-size: 2rem;
+  padding: 30px 20px;
 }
 
 .texto-cuenta {
-  font-family: 'EB Garamond', serif;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
+  margin: 10px 0;
 }
 
 .texto-final {
-  font-size: 1.5rem;
+  margin-top: 20px;
 }
 
-/* --------------------------- ESTILOS PARA LA LÍNEA VERTICAL Y CÍRCULOS --------------------------- */
-
-.linea-burdeos {
-  position: absolute;
-  width: 4px;
-  height: 100%;
-  background-color: #590a1b;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  z-index: 1;
-}
-
-/* Estilos de los eventos y círculos */
-.timeline {
-  position: relative;
-  margin-top: 100px;
-  padding-left: 50%;
-  padding-right: 50%;
-}
-
-.evento {
+/* Estructura de la cuenta atrás */
+.cuenta-grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.5s, transform 0.5s;
-  margin-bottom: 60px;
-}
-
-.evento .circulo {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #590a1b;
-  margin-bottom: 10px;
-}
-
-.evento .hora {
-  font-size: 1.2rem;
-  color: gray;
-}
-
-.evento .texto {
-  font-size: 1rem;
-  color: rgba(48, 48, 48, 0.5);
-  transition: color 0.5s;
-}
-
-/* Cuando el evento está visible */
-.evento.visible .circulo {
-  animation: circle-animation 0.5s ease-in-out forwards;
-}
-
-.evento.visible .texto {
-  color: rgba(48, 48, 48, 1); /* Texto al 100% */
-}
-
-/* Animación para el círculo */
-@keyframes circle-animation {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* Estilo de los números de la cuenta atrás */
-.count-item {
-  text-align: center;
-}
-
-.count-number {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.count-label {
-  font-size: 1rem;
-  font-weight: lighter;
-  opacity: 0.5;
-}
-
-/* Estilo de PLANNING */
-.detalles-evento h2 {
+  justify-content: center;
+  gap: 20px;
   font-family: 'EB Garamond', serif;
-  color: #590a1b;
-  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+.cuenta-item {
   text-align: center;
 }
 
-.planning-dia {
-  color: gray;
+.cuenta-item .numero {
   font-size: 1.2rem;
+}
+
+.cuenta-item .unidad {
+  font-size: 0.8rem;
+}
+
+/* Banda con imagen Foto02 */
+.banda-imagen {
+  background-color: #590a1b;
   text-align: center;
-  font-style: italic;
+  padding: 30px 15px;
 }
 
-/* --------------------------- ESTILOS PARA DISPOSITIVOS MÓVILES --------------------------- */
-
-@media (max-width: 768px) {
-  .timeline {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  .evento .circulo {
-    width: 20px;
-    height: 20px;
-  }
-
-  .evento .hora {
-    font-size: 1rem;
-  }
-
-  .evento .texto {
-    font-size: 0.9rem;
-  }
-
-  /* Cuenta atrás en móvil */
-  .count-item {
-    font-size: 1rem;
-  }
-
-  .count-number {
-    font-size: 1.5rem;
-  }
-
-  .count-label {
-    font-size: 0.8rem;
-  }
-}
-
-/* Estilo para las imágenes con ribetes */
-.imagen-ribete img,
-.imagen-palacio img,
-.imagen-mapa img,
 .banda-imagen img {
   width: 100%;
-  height: auto;
-  display: block;
+  max-width: 600px;
+}
+
+/* Planning */
+.planning-dia {
+  font-style: italic;
+  color: #303030;
+  margin: 5px 0;
+}
+
+/* Fade-in */
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenido-cita {
+    font-size: 1.2rem;
+  }
+
+  .imagen-ribete img {
+    max-width: 400px;
+  }
+
+  .imagen-palacio img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .imagen-mapa img {
+    max-width: 90%;
+  }
+
+  .detalles-evento h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .cuenta-item .numero {
+    font-size: 1.2rem;
+  }
+
+  .cuenta-item .unidad {
+    font-size: 0.8rem;
+  }
+
+  .banda-imagen img {
+    max-width: 90%;
+  }
 }
