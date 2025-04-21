@@ -17,7 +17,7 @@ const countdown = () => {
 
 setInterval(countdown, 1000);
 
-// Scroll efecto de barrido hacia abajo
+// Scroll efecto de barrido (reveal/disappear)
 const revealImages = document.querySelectorAll('.scroll-reveal');
 
 const observer = new IntersectionObserver(entries => {
@@ -29,8 +29,8 @@ const observer = new IntersectionObserver(entries => {
     }
   });
 }, {
-  threshold: 0.5,
-  rootMargin: "-20% 0px -80% 0px"
+  threshold: 0,
+  rootMargin: "0px 0px -80% 0px"
 });
 
 revealImages.forEach(img => observer.observe(img));
