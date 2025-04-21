@@ -2,119 +2,91 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Invitación de Boda</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <!-- Franja burdeos con cita -->
-  <section class="banda-inicial">
-    <div class="contenido-cita">
-      “Cuando nos vimos por primera vez,<br/>
-      no hicimos más que recordarnos<br/>
-      por qué nos habíamos querido<br/>
-      en todas las vidas.”<br/>
-      <div class="autor">Antonio Machado</div>
-    </div>
+  <!-- Banda burdeos con cita -->
+  <section class="cita">
+    <p class="contenido-cita">
+      "Cuando nos vimos por primera vez,<br>
+      no hicimos más que recordarnos<br>
+      por qué nos habíamos querido<br><br>
+      en todas las vidas"<br><br>
+      <em>Antonio Machado</em>
+    </p>
   </section>
 
   <!-- Imagen ribetesuperior -->
-  <div class="imagen-ribete">
-    <img src="ribetes/ribetesuperior.jpg" alt="Ribete superior" />
-  </div>
+  <img src="ribetes/ribetesuperior.jpg" alt="Ribete superior" class="ribete" />
 
   <!-- Ceremonia y recepción -->
-  <section class="detalles-evento fade-in">
+  <section class="evento">
     <h2>CEREMONIA Y RECEPCIÓN</h2>
-    <div class="detalle-lugar">
-      <p>Palacio de los Acevedo,</p>
-      <p>Hoznayo</p>
-      <p>12:30</p>
-    </div>
+    <p class="evento-lugar">Palacio de los Acevedo,<br>Hoznayo<br>12:30</p>
   </section>
 
   <!-- Imagen Palacio -->
-  <div class="imagen-palacio">
-    <img src="Palacio.jpg" alt="Palacio de los Acevedo" />
+  <div class="imagen-ajustada">
+    <img src="Palacio.jpg" alt="Palacio de los Acevedo">
   </div>
 
-  <!-- Imagen Maps -->
-  <div class="imagen-mapa">
-    <a href="https://www.google.es/maps/place/Palacio+de+los+Acevedo+de+Hoznayo/@43.388864,-3.7029943,17z/data=!4m9!3m8!1s0xd4eca55b45f05cd:0x55e6f597cd01e591!5m2!4m1!1i2!8m2!3d43.388864!4d-3.7004194!16s%2Fg%2F121rvmt4?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">
-      <img src="ribetes/maps.jpg" alt="Mapa" />
-    </a>
-  </div>
+  <!-- Mapa -->
+  <a href="https://www.google.es/maps/place/Palacio+de+los+Acevedo+de+Hoznayo/@43.388864,-3.7029943,17z/data=!4m9!3m8!1s0xd4eca55b45f05cd:0x55e6f597cd01e591!5m2!4m1!1i2!8m2!3d43.388864!4d-3.7004194!16s%2Fg%2F121rvmt4?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">
+    <img src="ribetes/maps.jpg" alt="Mapa" class="imagen-centro">
+  </a>
 
   <!-- Imagen ribeteinferior -->
-  <div class="imagen-ribete">
-    <img src="ribetes/ribeteinferior.jpg" alt="Ribete inferior" />
-  </div>
+  <img src="ribetes/ribeteinferior.jpg" alt="Ribete inferior" class="ribete" />
 
   <!-- Cuenta atrás -->
-  <section class="banda-cuenta">
-    <div class="texto-cuenta">Faltan</div>
-    <div class="cuenta-grid" id="countdown">
-      <div class="cuenta-item">
-        <div class="numero" id="dias">0</div>
-        <div class="unidad">DÍAS</div>
-      </div>
-      <div class="cuenta-item">
-        <div class="numero" id="horas">0</div>
-        <div class="unidad">HORAS</div>
-      </div>
-      <div class="cuenta-item">
-        <div class="numero" id="minutos">0</div>
-        <div class="unidad">MIN</div>
-      </div>
-      <div class="cuenta-item">
-        <div class="numero" id="segundos">0</div>
-        <div class="unidad">SEG</div>
-      </div>
-    </div>
-    <div class="texto-cuenta texto-final">para nuestra boda</div>
+  <section class="cuenta">
+    <p>Faltan</p>
+    <div id="countdown"></div>
+    <p>para nuestra boda</p>
   </section>
 
   <!-- Imagen Foto02 -->
-  <section class="banda-imagen">
-    <img src="ribetes/Foto02.jpg" alt="Foto 02" />
+  <section class="banda-foto">
+    <img src="ribetes/Foto02.jpg" alt="Foto02">
   </section>
 
-  <!-- Planning info -->
-  <section class="detalles-evento fade-in">
+  <!-- Planning -->
+  <section class="planning-texto">
     <h2>PLANNING</h2>
-    <div class="detalle-lugar planning-dia">Sábado</div>
-    <div class="detalle-lugar planning-dia">8-11-2025</div>
+    <p><em>Sábado</em></p>
+    <p><em>8-11-2025</em></p>
   </section>
 
-  <!-- Timeline scroll planning -->
-  <section class="timeline-section">
-    <div class="timeline-line"></div>
+  <!-- Timeline interactivo -->
+  <section class="timeline-container">
+    <div class="timeline-line" id="timelineLine"></div>
 
+    <div class="timeline-item" data-index="0">
+      <div class="timeline-circle"></div>
+      <div class="timeline-image"><img src="ribetes/planning01.jpg" alt="Planning 1"></div>
+    </div>
     <div class="timeline-item" data-index="1">
-      <div class="circle"></div>
-      <img src="ribetes/planning01.jpg" alt="Planning 1" />
+      <div class="timeline-circle"></div>
+      <div class="timeline-image"><img src="ribetes/planning02.jpg" alt="Planning 2"></div>
     </div>
     <div class="timeline-item" data-index="2">
-      <div class="circle"></div>
-      <img src="ribetes/planning02.jpg" alt="Planning 2" />
+      <div class="timeline-circle"></div>
+      <div class="timeline-image"><img src="ribetes/planning03.jpg" alt="Planning 3"></div>
     </div>
     <div class="timeline-item" data-index="3">
-      <div class="circle"></div>
-      <img src="ribetes/planning03.jpg" alt="Planning 3" />
+      <div class="timeline-circle"></div>
+      <div class="timeline-image"><img src="ribetes/planning04.jpg" alt="Planning 4"></div>
     </div>
     <div class="timeline-item" data-index="4">
-      <div class="circle"></div>
-      <img src="ribetes/planning04.jpg" alt="Planning 4" />
+      <div class="timeline-circle"></div>
+      <div class="timeline-image"><img src="ribetes/planning05.jpg" alt="Planning 5"></div>
     </div>
     <div class="timeline-item" data-index="5">
-      <div class="circle"></div>
-      <img src="ribetes/planning05.jpg" alt="Planning 5" />
-    </div>
-    <div class="timeline-item" data-index="6">
-      <div class="circle"></div>
-      <img src="ribetes/planning06.jpg" alt="Planning 6" />
+      <div class="timeline-circle"></div>
+      <div class="timeline-image"><img src="ribetes/planning06.jpg" alt="Planning 6"></div>
     </div>
   </section>
 
