@@ -78,13 +78,10 @@ body {
   padding: 30px 20px;
 }
 
-.texto-cuenta {
-  font-size: 1.6rem;
-  margin: 10px 0;
-}
-
+.texto-cuenta,
 .texto-final {
-  margin-top: 20px;
+  font-size: 1.4rem;
+  margin: 10px 0;
 }
 
 .cuenta-grid {
@@ -100,7 +97,7 @@ body {
 }
 
 .cuenta-item .numero {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .cuenta-item .unidad {
@@ -150,6 +147,15 @@ body {
     max-width: 400px;
   }
 
+  .detalles-evento h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .detalle-lugar p {
+    font-size: 1.2rem;
+  }
+
   .imagen-palacio img,
   .imagen-mapa img,
   .banda-imagen img {
@@ -157,18 +163,13 @@ body {
     margin: 0 auto;
   }
 
-  .detalles-evento h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
+  .cuenta-item .numero {
+    font-size: 1.8rem;
   }
 
-  .cuenta-item .numero,
   .cuenta-item .unidad {
     font-size: 1rem;
   }
-
-  .galeria-planning img {
-    max-width: 90%;
-  }
 }
+
 
