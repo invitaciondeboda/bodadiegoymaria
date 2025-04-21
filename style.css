@@ -5,6 +5,10 @@ body {
   color: #303030;
 }
 
+.imagen-inicial {
+  text-align: center;
+  margin: 0 auto;
+}
 .imagen-inicial img {
   width: 100%;
   max-width: 600px; /* Ajusta el tamaño máximo de la imagen */  
@@ -52,7 +56,7 @@ body {
 .detalle-lugar p {
   color: #303030;
   margin: 5px 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .imagen-palacio {
@@ -62,7 +66,7 @@ body {
 
 .imagen-palacio img {
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
   border-radius: 0;
 }
 
