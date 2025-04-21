@@ -116,10 +116,12 @@ body {
 }
 
 .galeria-planning {
-  display: flex;
+  width: 100%;
+  max-width: 100%;
+  display: block;  
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 0px;
   margin: 40px 0;
 }
 
