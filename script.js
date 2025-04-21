@@ -34,6 +34,3 @@ const observer = new IntersectionObserver(entries => {
 });
 
 revealImages.forEach(img => observer.observe(img));
-
-
-imgs.forEach(img => observer.observe(img));
