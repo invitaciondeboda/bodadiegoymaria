@@ -35,3 +35,23 @@ function updateCountdown() {
 }
 
 setInterval(updateCountdown, 1000);
+
+// Función que comprueba si el elemento está visible en la pantalla
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return rect.top >= 0 && rect.bottom <= window.innerHeight;
+}
+
+// Añadir la clase "visible" cuando el elemento esté en el viewport
+function handleScroll() {
+  const eventos = document.querySelectorAll('.evento');
+  eventos.forEach(evento => {
+    if (isElementInViewport(evento)) {
+      evento.classList.add('visible');
+    }
+  });
+}
+
+// Añadir el event listener para el scroll
+window.addEventListener('scroll', handleScroll);
+
