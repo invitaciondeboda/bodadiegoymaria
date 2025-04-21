@@ -3,210 +3,214 @@ body {
   font-family: 'EB Garamond', serif;
   background-color: #efdae0;
   color: #303030;
-  text-align: center;
 }
 
-.cita {
+.banda-inicial {
   background-color: #590a1b;
   color: white;
+  text-align: center;
   padding: 2rem 1rem;
 }
 
 .contenido-cita {
   font-size: 1.5rem;
-  margin: 0;
-}
-
-.ribete {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-.evento {
-  margin-top: 1rem;
-}
-
-.evento h2 {
-  color: #590a1b;
-  font-weight: 400;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.evento-lugar {
-  color: #303030;
-  font-size: 1.3rem;
   line-height: 1.6;
 }
 
-.imagen-ajustada {
-  padding: 0 1rem;
-  margin: 1rem 0;
+.autor {
+  margin-top: 1rem;
+  font-style: italic;
 }
 
-.imagen-ajustada img {
-  width: 100%;
+.imagen-ribete img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
   height: auto;
-  display: block;
-  border-radius: 0;
 }
 
-.imagen-centro {
-  display: block;
-  margin: 1rem auto;
-  width: 90%;
-  max-width: 600px;
-}
-
-.cuenta {
-  background-color: #590a1b;
-  color: white;
+.detalles-evento {
+  text-align: center;
   padding: 2rem 1rem;
 }
 
-#countdown {
+.detalles-evento h2 {
+  color: #590a1b;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.detalle-lugar p {
+  margin: 0.3rem 0;
+  color: #303030;
+}
+
+.imagen-palacio img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 90%;
+  height: auto;
+  border-radius: 0;
+}
+
+.imagen-mapa img {
+  display: block;
+  margin: 2rem auto;
+  max-width: 90%;
+  height: auto;
+}
+
+.banda-cuenta {
+  background-color: #590a1b;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.texto-cuenta,
+.texto-final {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cuenta-grid {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  font-family: 'EB Garamond', serif;
-  font-weight: 400;
   flex-wrap: wrap;
-  margin: 1rem 0;
 }
 
-.countdown-item {
+.cuenta-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.6rem;
 }
 
-.countdown-label {
+.numero {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.unidad {
   font-size: 1rem;
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
 }
 
-.banda-foto {
-  background-color: #590a1b;
-  padding: 1rem;
-}
-
-.banda-foto img {
-  width: 100%;
-  height: auto;
+.banda-imagen img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
-.planning-texto {
-  margin: 2rem 1rem;
-}
-
-.planning-texto h2 {
-  color: #590a1b;
-  font-weight: 400;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.planning-texto p {
+.planning-dia {
   font-style: italic;
   color: #303030;
-  font-size: 1.2rem;
   margin: 0.3rem 0;
 }
 
-.timeline-container {
-  position: relative;
-  margin: 3rem auto;
-  width: 90%;
-  max-width: 800px;
-}
-
-.timeline-line {
-  position: absolute;
-  left: 30px;
-  top: 0;
-  width: 4px;
-  background-color: #590a1b;
-  height: 0;
-  transition: height 0.3s ease-out;
-}
-
-.timeline-item {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 4rem;
-}
-
-.timeline-circle {
-  width: 20px;
-  height: 20px;
-  background-color: #590a1b;
-  border-radius: 50%;
-  position: absolute;
-  left: 20px;
-  top: 0;
-  opacity: 0;
-  transition: opacity 0.6s ease-in;
-}
-
-.timeline-image {
-  margin-left: 60px;
+/* Fade-in animation */
+.fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.6s ease-in-out;
+  transition: all 0.8s ease;
 }
 
-.timeline-image img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 0.5rem;
-}
-
-.timeline-item.visible .timeline-circle,
-.timeline-item.visible .timeline-image {
+.fade-in.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-@media screen and (max-width: 768px) {
+/* Timeline */
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 20px 20px;
+  max-width: 600px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: #590a1b;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.timeline-item .circle {
+  width: 14px;
+  height: 14px;
+  background-color: #590a1b;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.6s ease;
+}
+
+.timeline-item .texto {
+  font-size: 1.2rem;
+  color: #303030;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.timeline-item.visible .circle {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.timeline-item.visible .texto {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .contenido-cita {
     font-size: 1.2rem;
   }
 
-  .evento h2 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin: 0.5rem 1rem 0.3rem;
+  .detalles-evento h2 {
+    font-size: 1.4rem;
   }
 
-  .ribete {
-    width: 90%;
+  .imagen-palacio img,
+  .imagen-mapa img {
+    max-width: 85%;
   }
 
-  .imagen-ajustada img {
-    width: 90%;
-    margin: 0 auto;
+  .imagen-ribete img {
+    max-width: 85%;
   }
 
-  .planning-texto h2 {
-    font-size: 1.5rem;
-    font-weight: 300;
-  }
-
-  .countdown-item {
+  .numero {
     font-size: 1rem;
   }
 
-  .countdown-label {
-    font-size: 0.8rem;
+  .unidad {
+    font-size: 0.9rem;
   }
 
-  .banda-foto img {
-    width: 90%;
+  .timeline::before {
+    left: 8px;
+  }
+
+  .timeline-item {
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .timeline-item .circle {
+    margin-left: -30px;
   }
 }
+
