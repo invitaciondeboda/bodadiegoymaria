@@ -194,7 +194,8 @@ body {
   display: inline-block;
 }
 
-/* Estilo para el desplegable de alojamientos */
+
+
 .desplegable {
   text-align: center;
   margin: 20px auto;
@@ -216,6 +217,7 @@ body {
 
 .desplegable-btn .flecha {
   font-size: 1.2rem;
+  line-height: 1;
 }
 
 .desplegable-btn:hover {
@@ -227,10 +229,11 @@ body {
   margin: 20px auto;
   text-align: left;
   background: #fff;
-  padding: 20px;
+  padding: 20px 30px; /* márgenes laterales más amplios */
   border-radius: 8px;
   color: #333;
   max-width: 90%;
+  transition: all 0.3s ease-in-out;
 }
 
 .desplegable-contenido ul {
@@ -310,7 +313,7 @@ body {
   }
 
   .desplegable-contenido {
-    padding: 15px;
+    padding: 20px 25px; /* también aquí margen lateral */
     max-width: 90%;
   }
 
