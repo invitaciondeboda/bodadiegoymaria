@@ -200,7 +200,74 @@ body {
   transform: scale(1.05);
 }
 
+/* Estilo para las imágenes (código, regalo, alojamiento) */
+.imagen-codigo,
+.imagen-regalo,
+.imagen-alojamiento {
+  text-align: center;
+  margin: 10px 0;
+}
 
+.imagen-codigo img,
+.imagen-regalo img,
+.imagen-alojamiento img {
+  width: 100%;
+  max-width: 90%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Estilo para el desplegable de alojamientos */
+.desplegable {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.desplegable-btn {
+  background-color: #590a1b; /* Burdeos */
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-family: 'EB Garamond', serif;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.desplegable-btn:hover {
+  background-color: #490819;
+}
+
+.desplegable-contenido {
+  display: none;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.desplegable-contenido ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.desplegable-contenido li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.desplegable-contenido a {
+  color: #590a1b;
+  text-decoration: none;
+}
+
+.desplegable-contenido a:hover {
+  text-decoration: underline;
+}
+
+/* Mostrar el contenido del desplegable cuando se activa */
+.desplegable-btn.active + .desplegable-contenido {
+  display: block;
+}
 
 
 
@@ -248,6 +315,11 @@ body {
 
   .boton-confirmar a:nth-child(2) {
     font-size: 0.9rem; /* Reducir el tamaño de (Haz clic) en móviles */
+  }
+
+  .desplegable-btn {
+    font-size: 1rem;
+    padding: 10px 18px;
   }
 }
 
