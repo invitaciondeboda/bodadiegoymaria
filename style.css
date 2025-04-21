@@ -167,6 +167,50 @@ body {
 }
 
 
+/* Estilo para la imagen de asistencia */
+.imagen-asistencia {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 20px auto;
+  /* Aquí puedes ajustar el tamaño si deseas que la imagen sea más pequeña en pantallas grandes */
+}
+
+/* Estilo del contenedor del botón de confirmación */
+.boton-confirmar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilo del botón de confirmación */
+.boton-confirmar a {
+  background-color: #590a1b; /* Burdeos */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-family: 'EB Garamond', serif;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+.boton-confirmar a:hover {
+  background-color: #490819; /* Un tono de burdeos más oscuro */
+  transform: scale(1.05);
+}
+
+/* Asegurar que el enlace se abra en una nueva pestaña */
+.boton-confirmar a:focus {
+  outline: none;
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
   .contenido-cita {
     font-size: 1.2rem;
