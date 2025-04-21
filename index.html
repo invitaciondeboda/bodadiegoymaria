@@ -9,68 +9,99 @@
 </head>
 <body>
 
-  <!-- Franja con cita -->
-  <section class="banda-inicial">
-    <div class="contenido-cita">
-      <p>“Cuando nos vimos por primera vez,<br/>
-      no hicimos más que recordarnos<br/>
-      por qué nos habíamos querido<br/>
-      en todas las vidas”.</p>
-      <p class="autor">Antonio Machado</p>
+  <!-- Fondo con la imagen -->
+  <div class="fondo-imagen">
+    <section class="banda-inicial">
+      <div class="contenido-cita">
+        <p>“Cuando nos vimos por primera vez,<br/>
+        no hicimos más que recordarnos<br/>
+        por qué nos habíamos querido<br/>
+        en todas las vidas”.</p>
+        <p class="autor">Antonio Machado</p>
+      </div>
+    </section>
+
+    <div class="imagen-ribete">
+      <img src="ribetes/ribetesuperior.jpg" alt="Ribete decorativo" />
     </div>
-  </section>
 
-  <!-- Imagen ribete superior -->
-  <div class="imagen-ribete">
-    <img src="ribetes/ribetesuperior.jpg" alt="Ribete decorativo" />
-  </div>
+    <section class="detalles-evento fade-in">
+      <h2>CEREMONIA Y RECEPCIÓN</h2>
+      <div class="detalle-lugar">
+        <p>Palacio de los Acevedo,</p>
+        <p>Hoznayo</p>
+        <p>12:30</p>
+      </div>
+    </section>
 
-  <!-- CEREMONIA Y RECEPCIÓN -->
-  <section class="detalles-evento fade-in">
-    <h2>CEREMONIA Y RECEPCIÓN</h2>
-    <div class="detalle-lugar">
-      <p>Palacio de los Acevedo,</p>
-      <p>Hoznayo</p>
-      <p>12:30</p>
+    <div class="imagen-palacio">
+      <img src="Palacio.jpg" alt="Palacio de los Acevedo" />
     </div>
-  </section>
 
-  <!-- Imagen Palacio -->
-  <div class="imagen-palacio">
-    <img src="Palacio.jpg" alt="Palacio de los Acevedo" />
-  </div>
+    <div class="imagen-mapa">
+      <a href="https://www.google.es/maps/place/Palacio+de+los+Acevedo+de+Hoznayo/@43.388864,-3.7029943,17z/data=!4m9!3m8!1s0xd4eca55b45f05cd:0x55e6f597cd01e591!5m2!4m1!1i2!8m2!3d43.388864!4d-3.7004194!16s%2Fg%2F121rvmt4?entry=ttu" target="_blank">
+        <img src="ribetes/maps.jpg" alt="Mapa - Cómo llegar" />
+      </a>
+    </div>
 
-  <!-- Imagen Mapa -->
-  <div class="imagen-mapa">
-    <a href="https://www.google.es/maps/place/Palacio+de+los+Acevedo+de+Hoznayo/@43.388864,-3.7029943,17z/data=!4m9!3m8!1s0xd4eca55b45f05cd:0x55e6f597cd01e591!5m2!4m1!1i2!8m2!3d43.388864!4d-3.7004194!16s%2Fg%2F121rvmt4?entry=ttu" target="_blank">
-      <img src="ribetes/maps.jpg" alt="Mapa - Cómo llegar" />
-    </a>
-  </div>
+    <div class="imagen-ribete">
+      <img src="ribetes/ribeteinferior.jpg" alt="Decoración inferior" />
+    </div>
 
-  <!-- Imagen ribete inferior -->
-  <div class="imagen-ribete">
-    <img src="ribetes/ribeteinferior.jpg" alt="Decoración inferior" />
-  </div>
+    <section class="banda-cuenta">
+      <p class="texto-cuenta">Faltan</p>
+      <div id="countdown" class="cuenta-grid"></div>
+      <p class="texto-cuenta texto-final">para nuestra boda</p>
+    </section>
 
-  <!-- Franja burdeos con cuenta atrás -->
-  <section class="banda-cuenta">
-    <p class="texto-cuenta">Faltan</p>
-    <div id="countdown" class="cuenta-grid"></div>
-    <p class="texto-cuenta texto-final">para nuestra boda</p>
-  </section>
+    <div class="banda-imagen">
+      <img src="ribetes/Foto02.jpg" alt="Foto especial" />
+    </div>
 
-  <!-- Franja burdeos con imagen Foto02 -->
-  <div class="banda-imagen">
-    <img src="ribetes/Foto02.jpg" alt="Foto especial" />
-  </div>
-
-  <!-- Sección Planning -->
-  <section class="detalles-evento">
-    <h2>PLANNING</h2>
-    <p class="planning-dia"><em>Sábado</em></p>
-    <p class="planning-dia"><em>8-11-2025</em></p>
-  </section>
+    <section class="detalles-evento">
+      <h2>PLANNING</h2>
+      <p class="planning-dia"><em>Sábado</em></p>
+      <p class="planning-dia"><em>8-11-2025</em></p>
+    </section>
+    
+    <!-- Aquí empieza la nueva sección con los círculos y la línea -->
+    <div class="timeline">
+      <div class="linea-burdeos"></div>
+      <div class="evento" id="evento1">
+        <div class="circulo"></div>
+        <p class="hora">12:30</p>
+        <p class="texto">Ceremonia Civil</p>
+      </div>
+      <div class="evento" id="evento2">
+        <div class="circulo"></div>
+        <p class="hora">13:30</p>
+        <p class="texto">Cóctel</p>
+      </div>
+      <div class="evento" id="evento3">
+        <div class="circulo"></div>
+        <p class="hora">15:00</p>
+        <p class="texto">Celebración</p>
+      </div>
+      <div class="evento" id="evento4">
+        <div class="circulo"></div>
+        <p class="hora">19:00</p>
+        <p class="texto">A bailar</p>
+      </div>
+      <div class="evento" id="evento5">
+        <div class="circulo"></div>
+        <p class="hora">22:00</p>
+        <p class="texto">Recena</p>
+      </div>
+      <div class="evento" id="evento6">
+        <div class="circulo"></div>
+        <p class="hora">00:00</p>
+        <p class="texto">Fin de la Fiesta</p>
+      </div>
+    </div>
+    
+  </div> <!-- Fin fondo-imagen -->
 
   <script src="script.js"></script>
 </body>
 </html>
+
