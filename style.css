@@ -100,14 +100,12 @@ body {
 }
 
 #countdown {
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: 1.2rem;
   font-family: 'EB Garamond', serif;
 }
 
 #countdown span {
   font-size: 1.2rem;
-  display: inline-block;
   margin-left: 4px;
 }
 
@@ -127,19 +125,6 @@ body {
 }
 
 /* Sección Planning */
-.planning {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #efdae0;
-}
-
-.planning h2 {
-  font-size: 2.2rem;
-  color: #590a1b;
-  font-weight: 300;
-  margin-bottom: 15px;
-}
-
 .planning-dia {
   font-size: 1.5rem;
   font-style: italic;
@@ -160,7 +145,7 @@ body {
 /* Responsive */
 @media (max-width: 600px) {
   .contenido-cita p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .detalles-evento h2 {
@@ -190,12 +175,11 @@ body {
   }
 
   #countdown {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1.2rem;
   }
 
   #countdown span {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-left: 2px;
   }
 
@@ -204,10 +188,14 @@ body {
   }
 
   .planning h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    color: #590a1b;
+    font-weight: 400;
+    margin-bottom: 20px;
   }
 
   .planning-dia {
     font-size: 1.4rem;
   }
 }
+
