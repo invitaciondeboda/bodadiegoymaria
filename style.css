@@ -159,6 +159,14 @@ body {
 .scroll-reveal:nth-child(6) {
   transition-delay: 0.6s;
 }
+
+.galeria-planning {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Sin espacio entre las imágenes */
+}
+
+
 @media (max-width: 768px) {
   .contenido-cita {
     font-size: 1.2rem;
