@@ -35,3 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   revealImages.forEach(img => observer.observe(img));
 });
 
+// Función para activar/desactivar el desplegable
+document.querySelector(".desplegable-btn").addEventListener("click", function () {
+  this.classList.toggle("active");
+});
