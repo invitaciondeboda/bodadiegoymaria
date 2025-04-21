@@ -1,3 +1,4 @@
+/* Fuente general */
 body {
   margin: 0;
   font-family: 'EB Garamond', serif;
@@ -5,18 +6,17 @@ body {
   color: #303030;
 }
 
-/* Franja con cita */
+/* Sección burdeos para la cita */
 .banda-inicial {
   background-color: #590a1b;
   color: white;
+  padding: 30px 20px;
   text-align: center;
-  padding: 50px 20px;
 }
 
-.contenido-cita p {
-  margin: 0;
-  font-size: 1.8rem;
-  line-height: 1.5;
+.contenido-cita {
+  font-size: 1.5rem;
+  line-height: 1.6;
 }
 
 .autor {
@@ -27,175 +27,156 @@ body {
 /* Ribetes */
 .imagen-ribete {
   text-align: center;
-  margin: 10px 0;
-}
-.imagen-ribete img {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  display: block;
   margin: 0 auto;
 }
 
-/* Ceremonia y recepción */
+.imagen-ribete img {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Sección CEREMONIA Y RECEPCIÓN y PLANNING */
 .detalles-evento {
   text-align: center;
-  padding: 10px 20px 20px;
-  animation: fadeIn 2s ease-in;
+  margin: 40px 20px;
 }
 
 .detalles-evento h2 {
+  font-size: 1.8rem;
   color: #590a1b;
-  font-size: 2.2rem;
-  font-weight: 400;
-  margin-bottom: 20px;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
 .detalle-lugar p {
-  margin: 5px 0;
-  font-size: 1.5rem;
   color: #303030;
+  margin: 5px 0;
+  font-size: 1.2rem;
 }
 
-/* Imagen Palacio */
+/* Imagen del palacio */
 .imagen-palacio {
   text-align: center;
-  margin: 20px 20px 30px;
+  margin: 20px 15px;
 }
 
 .imagen-palacio img {
   width: 100%;
-  max-width: 800px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  max-width: 700px;
   border-radius: 0;
 }
 
-/* Imagen mapa */
+/* Imagen del mapa */
 .imagen-mapa {
   text-align: center;
-  margin: 10px 20px 30px;
+  margin: 30px 15px;
 }
 
 .imagen-mapa img {
   width: 100%;
-  max-width: 800px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  max-width: 500px;
 }
 
-/* Franja burdeos con cuenta atrás */
+/* Banda burdeos cuenta atrás */
 .banda-cuenta {
   background-color: #590a1b;
-  text-align: center;
   color: white;
-  padding: 50px 20px 20px;
+  text-align: center;
+  padding: 30px 20px;
 }
 
 .texto-cuenta {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 10px 0;
 }
 
-#countdown {
-  font-size: 1.2rem;
-  font-family: 'EB Garamond', serif;
+.texto-final {
+  margin-top: 20px;
 }
 
-#countdown span {
-  font-size: 1.2rem;
-  margin-left: 4px;
-}
-
-/* Franja imagen final */
-.banda-imagen {
-  background-color: #590a1b;
+/* Estructura de la cuenta atrás */
+.cuenta-grid {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 10px 0 30px;
+  gap: 20px;
+  font-family: 'EB Garamond', serif;
+  margin: 20px 0;
+}
+
+.cuenta-item {
+  text-align: center;
+}
+
+.cuenta-item .numero {
+  font-size: 1.2rem;
+}
+
+.cuenta-item .unidad {
+  font-size: 0.8rem;
+}
+
+/* Banda con imagen Foto02 */
+.banda-imagen {
+  background-color: #590a1b;
+  text-align: center;
+  padding: 30px 15px;
 }
 
 .banda-imagen img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  width: 100%;
+  max-width: 600px;
 }
 
-/* Sección Planning */
+/* Planning */
 .planning-dia {
-  font-size: 1.5rem;
   font-style: italic;
-  margin: 5px 0;
   color: #303030;
+  margin: 5px 0;
 }
 
-/* Animación fade-in */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
+/* Fade-in */
 .fade-in {
-  animation: fadeIn 1.5s ease-in;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Responsive */
-@media (max-width: 600px) {
-  .contenido-cita p {
+@media (max-width: 768px) {
+  .contenido-cita {
     font-size: 1.2rem;
+  }
+
+  .imagen-ribete img {
+    max-width: 400px;
+  }
+
+  .imagen-palacio img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .imagen-mapa img {
+    max-width: 90%;
   }
 
   .detalles-evento h2 {
     font-size: 1.5rem;
-    font-weight: 300;
-    padding: 0 10px;
+    font-weight: 400;
   }
 
-  .detalle-lugar p {
-    font-size: 1.5rem;
-  }
-
-  .imagen-palacio img {
-    width: 85%;
-  }
-
-  .imagen-mapa img {
-    width: 90%;
-  }
-
-  .imagen-ribete img {
-    width: 90%;
-  }
-
-  .texto-cuenta {
-    font-size: 1.5rem;
-  }
-
-  #countdown {
+  .cuenta-item .numero {
     font-size: 1.2rem;
   }
 
-  #countdown span {
-    font-size: 1.2rem;
-    margin-left: 2px;
+  .cuenta-item .unidad {
+    font-size: 0.8rem;
   }
 
   .banda-imagen img {
-    width: 85%;
-  }
-
-  .planning h2 {
-    font-size: 1.5rem;
-    color: #590a1b;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-
-  .planning-dia {
-    font-size: 1.4rem;
+    max-width: 90%;
   }
 }
-
