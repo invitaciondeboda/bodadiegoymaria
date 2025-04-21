@@ -1,37 +1,42 @@
-const targetDate = new Date("2025-11-08T12:30:00").getTime();
-const countdownElement = document.getElementById("countdown");
-
-function updateCountdown() {
+// Cuenta atrás
+const countdown = () => {
+  const target = new Date("November 8, 2025 12:30:00").getTime();
   const now = new Date().getTime();
-  const distance = targetDate - now;
+  const diff = target - now;
 
-  if (distance < 0) {
-    countdownElement.innerHTML = "<p>¡Ya es el gran día!</p>";
-    return;
-  }
+  const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const horas = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutos = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const segundos = Math.floor((diff % (1000 * 60)) / 1000);
 
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((distance / (1000 * 60)) % 60);
-  const seconds = Math.floor((distance / 1000) % 60);
+  document.getElementById("dias").textContent = dias;
+  document.getElementById("horas").textContent = horas;
+  document.getElementById("minutos").textContent = minutos;
+  document.getElementById("segundos").textContent = segundos;
+};
 
-  countdownElement.innerHTML = `
-    <div class="cuenta-item">
-      <div class="numero">${days}</div>
-      <div class="unidad">DÍAS</div>
-    </div>
-    <div class="cuenta-item">
-      <div class="numero">${hours}</div>
-      <div class="unidad">HORAS</div>
-    </div>
-    <div class="cuenta-item">
-      <div class="numero">${minutes}</div>
-      <div class="unidad">MIN</div>
-    </div>
-    <div class="cuenta-item">
-      <div class="numero">${seconds}</div>
-      <div class="unidad">SEG</div>
-    </div>`;
-}
+setInterval(countdown, 1000);
 
-setInterval(updateCountdown, 1000);
+// Timeline scroll animation
+document.addEventListener("DOMContentLoaded", () => {
+  const timelineItems = document.querySelectorAll(".timeline-item");
+  const timelineLine = document.querySelector(".timeline-line");
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+
+          const activeCount = document.querySelectorAll(".timeline-item.active").length;
+          const total = timelineItems.length;
+          const percentage = (activeCount / total) * 100;
+          timelineLine.style.height = `${percentage}%`;
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  timelineItems.forEach(item => observer.observe(item));
+});
