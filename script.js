@@ -25,14 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-      } else {
-        entry.target.classList.remove('visible');
       }
     });
   }, {
-    threshold: 0.5, // El 50% de la imagen debe estar visible para que se active
+    threshold: 0, // Cuando el 0% de la imagen sea visible se activa
     rootMargin: "0px 0px -50% 0px" // Se activa cuando la imagen está en el centro
   });
 
   revealImages.forEach(img => observer.observe(img));
 });
+
