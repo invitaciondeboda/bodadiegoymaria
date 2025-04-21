@@ -1,15 +1,12 @@
-/* Fondo de la página */
+/* Fuente general */
 body {
   margin: 0;
   font-family: 'EB Garamond', serif;
   background-color: #efdae0;
-  background-image: url('ribetes/fondo.jpg');
-  background-size: cover;
-  background-position: center;
   color: #303030;
 }
 
-/* Sección de la cita y todo lo anterior como ya estaba */
+/* Sección burdeos para la cita */
 .banda-inicial {
   background-color: #590a1b;
   color: white;
@@ -27,55 +24,60 @@ body {
   margin-top: 20px;
 }
 
-/* Círculos y timeline */
-.timeline {
-  margin-top: 80px;
-  padding: 50px 20px;
+/* Ribetes */
+.imagen-ribete {
   text-align: center;
-}
-
-.timeline-background {
-  position: relative;
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 40px;
-  opacity: 0.5;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #590a1b;
   margin: 0 auto;
-  transition: transform 0.5s ease;
 }
 
-.time {
+.imagen-ribete img {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Sección CEREMONIA Y RECEPCIÓN y PLANNING */
+.detalles-evento {
+  text-align: center;
+  margin: 40px 20px;
+}
+
+.detalles-evento h2 {
+  font-size: 1.8rem;
+  color: #590a1b;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.detalle-lugar p {
+  color: #303030;
+  margin: 5px 0;
   font-size: 1.2rem;
-  color: #303030;
-  margin-top: 10px;
 }
 
-.event {
-  font-size: 1rem;
-  color: rgba(48, 48, 48, 0.5);
-  transition: color 0.3s ease;
-  margin-top: 5px;
+/* Imagen del palacio */
+.imagen-palacio {
+  text-align: center;
+  margin: 20px 15px;
 }
 
-.timeline-item.visible .circle {
-  transform: scale(1.2);
+.imagen-palacio img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 0;
 }
 
-.timeline-item.visible .event {
-  color: #303030;
+/* Imagen del mapa */
+.imagen-mapa {
+  text-align: center;
+  margin: 30px 15px;
 }
 
-/* Franja burdeos con cuenta atrás */
+.imagen-mapa img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Banda burdeos cuenta atrás */
 .banda-cuenta {
   background-color: #590a1b;
   color: white;
