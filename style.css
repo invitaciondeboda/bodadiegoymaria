@@ -200,7 +200,10 @@ body {
   display: inline-block;
 }
 
-
+.desplegable {
+  text-align: center;
+  margin: 20px auto;
+}
 
 .desplegable-btn {
   background-color: #590a1b;
