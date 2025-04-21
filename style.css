@@ -308,29 +308,35 @@ body {
 }
 
 .sobre {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrado en la pantalla */
   width: 100%;
-  max-width: 600px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .sobre-img {
-  width: 50%;
-  transition: transform 1s ease, opacity 1s ease;
   position: absolute;
   top: 0;
-  height: auto;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 1s ease, opacity 1s ease;
 }
 
 .izquierda {
-  left: 0;
+  z-index: 1; /* Coloca la izquierda por debajo */
   transform-origin: left center;
 }
 
 .derecha {
-  right: 0;
+  z-index: 2; /* Coloca la derecha por encima */
   transform-origin: right center;
 }
 
@@ -339,10 +345,14 @@ body {
   cursor: pointer;
   width: 80px;
   transition: transform 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrado sobre las imágenes */
 }
 
 .boton-sobre:hover {
-  transform: scale(1.05);
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
 /* Efecto de apertura */
