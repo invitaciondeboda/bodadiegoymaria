@@ -1,37 +1,38 @@
 // Cuenta atrás
-const targetDate = new Date("2025-11-08T12:30:00").getTime();
+const countdown = () => {
+  const destino = new Date("2025-11-08T12:30:00");
+  const ahora = new Date();
+  const diff = destino - ahora;
 
-function updateCountdown() {
-  const now = new Date().getTime();
-  const diff = targetDate - now;
+  const segundos = Math.floor((diff / 1000) % 60);
+  const minutos = Math.floor((diff / 1000 / 60) % 60);
+  const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((diff / (1000 * 60)) % 60);
-  const seconds = Math.floor((diff / 1000) % 60);
+  document.getElementById("dias").textContent = dias;
+  document.getElementById("horas").textContent = horas;
+  document.getElementById("minutos").textContent = minutos;
+  document.getElementById("segundos").textContent = segundos;
+};
 
-  document.getElementById("days").textContent = days;
-  document.getElementById("hours").textContent = hours;
-  document.getElementById("minutes").textContent = minutes;
-  document.getElementById("seconds").textContent = seconds;
-}
+setInterval(countdown, 1000);
 
-setInterval(updateCountdown, 1000);
-updateCountdown();
+// Scroll reveal para las imágenes
+const images = document.querySelectorAll('.scroll-fade');
 
-// Efecto scroll imágenes
-const imgs = document.querySelectorAll(".scroll-img");
-
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
+      entry.target.classList.add('visible');
     } else {
-      entry.target.classList.remove("visible");
+      entry.target.classList.remove('visible');
     }
   });
 }, {
   threshold: 0.5
 });
+
+images.forEach(img => observer.observe(img));
+
 
 imgs.forEach(img => observer.observe(img));
