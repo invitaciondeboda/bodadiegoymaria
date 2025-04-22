@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, {
     threshold: 0,
-    rootMargin: "0px 0px -50% 0px"
+    rootMargin: "0px 0px -20% 0px"
   });
 
   revealImages.forEach(img => observer.observe(img));
