@@ -57,5 +57,5 @@ document.getElementById("botonAbrir").addEventListener("click", function () {
   setTimeout(() => {
     pantallaInicial.style.display = "none";
     contenido.style.display = "block";
-  }, 1200); // duración de la animación
+  }, 3000); // duración de la animación
 });
